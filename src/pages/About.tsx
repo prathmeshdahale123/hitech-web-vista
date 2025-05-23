@@ -66,7 +66,7 @@ That is, we have to produce engineers who can worl efficiently across the globe,
               </button>
               <p className="mt-4 text-gray-600 font-semibold text-center">
                 Prof. Govind Dhage<br />
-                Principal
+                Principal, Hi-Tech Institute Of Technology
               </p>
             </div>
 
@@ -93,7 +93,7 @@ That is, we have to produce engineers who can worl efficiently across the globe,
               </button>
               <p className="mt-4 text-gray-600 font-semibold text-center">
                 Shri. Eknath Jadhav<br />
-                Secretary, Hi-Tech Institute
+                Secretary, B.G.P.S Aurangabad
               </p>
             </div>
           </div>

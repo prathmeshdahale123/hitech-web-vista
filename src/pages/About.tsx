@@ -36,7 +36,7 @@ That is, we have to produce engineers who can worl efficiently across the globe,
               Hi-Tech Institute Of Technology
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Established in 2001, Hi-Tech Institute of mc Technology has been a pioneer in technical education,
+              Established in 2001, Hi-Tech Institute of Technology has been a pioneer in technical education,
               shaping global technocrats and contributing to technological advancement.
             </p>
           </div>

@@ -154,8 +154,7 @@ const Contact = () => {
                     <Clock className="w-6 h-6 text-blue-900 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-800">Office Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
+                      <p className="text-gray-600">Monday - Saturday: 10:00 AM - 5:00 PM</p>
                       <p className="text-gray-600">Sunday: Closed</p>
                     </div>
                   </div>
@@ -165,9 +164,22 @@ const Contact = () => {
               {/* Map */}
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <h2 className="text-2xl font-bold text-blue-900 mb-6">Location</h2>
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <p className="text-gray-600">Interactive Google Maps will be embedded here</p>
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-2xl font-bold text-blue-900 mb-6">Location</h2>
+                <div className="rounded-lg overflow-hidden">
+                  <iframe
+                    title="College Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.5579215798535!2d75.24215309319695!3d19.843052265938535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9bcfb0000001%3A0xc7607f93a921358e!2sHi-Tech%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1747991637197!5m2!1sen!2sin"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
+              </div>
+
               </div>
             </div>
           </div>

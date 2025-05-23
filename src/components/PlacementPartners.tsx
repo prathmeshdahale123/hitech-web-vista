@@ -6,7 +6,7 @@ const PlacementPartners = () => {
 
   // Placeholder company logos (using text for demo)
   const partners = [
-    { name: "Persistent Systems", logo: "PERSISTENT" },
+    { name: "Persistent Systems", logo: "https://upload.wikimedia.org/wikipedia/commons/0/06/Persistent_Systems_Logo.svg" },
     { name: "Quick Heal", logo: "QUICK HEAL" },
     { name: "Bentley Systems", logo: "BENTLEY" },
     { name: "Winjit Technologies", logo: "WINJIT" },

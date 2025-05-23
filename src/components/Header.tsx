@@ -51,7 +51,7 @@ const Header = () => {
                 <img 
                   src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png" 
                   alt="Hi-Tech Institute Logo" 
-                  className="w-16 h-16"
+                  className="w-20 h-20"
                 />
                 <div>
                   <h5 className="text-xl sd:text-2xl font-bold text-blue-900">Bhartiya Gramin Punarrachna Sanstha's</h5>

@@ -54,9 +54,9 @@ const Header = () => {
                   className="w-16 h-16"
                 />
                 <div>
-                  <h1 className="text-xl md:text-2xl font-bold text-blue-900">
-                    Bhartiya Gramin Punarrachna Sanstha's<br />
-                    Hi-Tech Institute of Technology, Aurangabad
+                  <h5 className="text-xl sd:text-2xl font-bold text-blue-900">Bhartiya Gramin Punarrachna Sanstha's</h5>
+                  <h1 className="text-2xl md:text-4xl font-bold text-blue-900">
+                    Hi-Tech Institute of Technology, Chh. Sambhajinagar
                   </h1>
                   <p className="text-blue-600 text-sm md:text-base mt-1">
                     A Pioneer to shape global Technocrats

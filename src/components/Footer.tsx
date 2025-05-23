@@ -34,13 +34,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-blue-200">
-              <li><a href="#" className="hover:text-yellow-400 transition-colors">AICTE</a></li>
-              <li><a href="#" className="hover:text-yellow-400 transition-colors">DTE</a></li>
-              <li><a href="#" className="hover:text-yellow-400 transition-colors">BAMU</a></li>
-              <li><a href="#" className="hover:text-yellow-400 transition-colors">BATU</a></li>
-              <li><a href="#" className="hover:text-yellow-400 transition-colors">MHRD</a></li>
-              <li><a href="#" className="hover:text-yellow-400 transition-colors">Scholarships</a></li>
-              <li><a href="#" className="hover:text-yellow-400 transition-colors">NIRF</a></li>
+              <li><a href="https://www.aicte-india.org/" className="hover:text-yellow-400 transition-colors">AICTE</a></li>
+              <li><a href="https://dte.maharashtra.gov.in/" className="hover:text-yellow-400 transition-colors">DTE</a></li>
+              <li><a href="https://bamua.digitaluniversity.ac/" className="hover:text-yellow-400 transition-colors">BAMU</a></li>
+              <li><a href="https://dbatu.ac.in/" className="hover:text-yellow-400 transition-colors">BATU</a></li>
+              <li><a href="https://www.education.gov.in/higher_education" className="hover:text-yellow-400 transition-colors">MHRD</a></li>
+              <li><a href="https://mahadbt.maharashtra.gov.in/" className="hover:text-yellow-400 transition-colors">Scholarships</a></li>
+              <li><a href="https://www.nirfindia.org/home" className="hover:text-yellow-400 transition-colors">NIRF</a></li>
             </ul>
           </div>
 

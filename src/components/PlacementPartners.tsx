@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 
 const PlacementPartners = () => {
@@ -6,14 +5,38 @@ const PlacementPartners = () => {
 
   // Placeholder company logos (using text for demo)
   const partners = [
-    { name: "Persistent Systems", logo: "https://upload.wikimedia.org/wikipedia/commons/0/06/Persistent_Systems_Logo.svg" },
-    { name: "Quick Heal", logo: "QUICK HEAL" },
-    { name: "Bentley Systems", logo: "BENTLEY" },
-    { name: "Winjit Technologies", logo: "WINJIT" },
-    { name: "Techno Vision", logo: "TECHNO VISION" },
-    { name: "Infosys", logo: "INFOSYS" },
-    { name: "TCS", logo: "TCS" },
-    { name: "Wipro", logo: "WIPRO" }
+    {
+      name: "Persistent Systems",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/0/06/Persistent_Systems_Logo.svg",
+    },
+    {
+      name: "Quick Heal",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Quick-Heal-Logo.png/250px-Quick-Heal-Logo.png",
+    },
+    {
+      name: "Bentley Systems",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bentley_Systems_wordmark.svg/250px-Bentley_Systems_wordmark.svg.png",
+    },
+    {
+      name: "Winjit Technologies",
+      logo: "https://winjit.com/themes/custom/winjit_subtheme/images/logo/logo.svg",
+    },
+    {
+      name: "Techno Vision",
+      logo: "https://www.technovision.tech/wp-content/uploads/2023/11/cropped-283740202_1339521356542826_5989151994353489062_n-removebg-preview.png",
+    },
+    {
+      name: "Infosys",
+      logo: "https://imgs.search.brave.com/ub6igt8xl2B8ypkP8h91JVhAUG_UBccUb32iQExvrn8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85Lzk1L0lu/Zm9zeXNfbG9nby5z/dmcvMjUwcHgtSW5m/b3N5c19sb2dvLnN2/Zy5wbmc",
+    },
+    {
+      name: "TCS",
+      logo: "https://imgs.search.brave.com/3_hZ2a0aPUvZz7Qd9muqtxdvNN2RxlCqOrong0oUCW4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2F5dXAuY29tL2Nk/bi9jb21wYW55X2xv/Z28vcFY1YzZxQUM2/eF8yMDIxMDMxMi5q/cGc",
+    },
+    {
+      name: "Wipro",
+      logo: "https://imgs.search.brave.com/yM-c0JUqXyf4Em09vki34-UH2zU3L3sWEWsqWR21DC4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi84Lzg5L1dp/cHJvX25ld19sb2dv/LnN2Zy81MTJweC1X/aXByb19uZXdfbG9n/by5zdmcucG5n",
+    },
   ];
 
   useEffect(() => {
@@ -50,9 +73,11 @@ const PlacementPartners = () => {
               >
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow duration-300 h-32 flex items-center justify-center group">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-blue-900 group-hover:text-yellow-500 transition-colors">
-                      {partner.logo}
-                    </div>
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="h-12 mx-auto object-contain"
+                    />
                     <div className="text-sm text-gray-600 mt-2">
                       {partner.name}
                     </div>

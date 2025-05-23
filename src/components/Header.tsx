@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Facebook, Twitter, Linkedin } from "lucide-react";
@@ -20,8 +19,7 @@ const Header = () => {
     { name: "Downloads", href: "/downloads" },
     { name: "NIRF", href: "/nirf" },
     { name: "Alumni", href: "/alumni" },
-    { name: "Contact", href: "/contact" },
-    { name: "Login", href: "/login" }
+    { name: "Contact", href: "/contact" }
   ];
 
   const isActive = (href: string) => location.pathname === href;

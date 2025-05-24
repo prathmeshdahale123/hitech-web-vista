@@ -18,6 +18,11 @@ import Placement from "./pages/Placement";
 import Downloads from "./pages/Downloads";
 import Nirf from "./pages/Nirf";
 import Alumni from "./pages/Alumni";
+import CivilDept from "./pages/departments/civil-dept";
+import MechanicalDept from "./pages/departments/mechanical-dept";
+import CseDept from "./pages/departments/cse-dept";
+import AimlDept from "./pages/departments/aiml-dept";
+
 
 const queryClient = new QueryClient();
 
@@ -41,6 +46,10 @@ const App = () => (
           <Route path="/downloads" element={<Downloads />} />
           <Route path="/nirf" element={<Nirf />} />
           <Route path="/alumni" element={<Alumni />} />
+          <Route path="/departments/civil" element={<CivilDept />} />
+          <Route path="/departments/mechanical" element={<MechanicalDept />} />
+          <Route path="/departments/cse" element={<CseDept />} />
+          <Route path="/departments/aiml" element={<AimlDept />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

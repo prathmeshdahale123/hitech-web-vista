@@ -144,7 +144,7 @@ const Placement = () => {
                       <Users className="h-6 w-6 text-blue-700" />
                     </div>
                     <div>
-                      <p className="font-medium">Prof. Rajesh Sharma</p>
+                      <p className="font-medium">Prof. Janardhan Bhor</p>
                       <p className="text-sm text-gray-600">Training & Placement Officer</p>
                     </div>
                   </div>

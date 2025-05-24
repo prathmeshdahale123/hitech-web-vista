@@ -41,7 +41,7 @@ const Departments = () => {
       icon: <Building2 className="h-12 w-12 text-blue-700" />,
       description:
         "Civil Engineering department focuses on design, construction and maintenance of infrastructure projects with emphasis on sustainable development.",
-      established: "2005",
+      established: "2010",
       faculty: 10,
       laboratories: 6,
       courses: ["B.Tech in Civil Engineering"],
@@ -88,7 +88,7 @@ const Departments = () => {
       ],
     },
     {
-      id: "computer",
+      id: "cse",
       name: "Computer Science & Engineering",
       icon: <BookOpen className="h-12 w-12 text-blue-700" />,
       description:
@@ -168,7 +168,7 @@ const Departments = () => {
               </CardContent>
               <CardFooter>
                 <Button variant="outline" className="w-full" asChild>
-                  <Link to={`/departments#${dept.id}`}>Department Details</Link>
+                  <Link to={`/departments/${dept.id}`}>Department Details</Link>
                 </Button>
               </CardFooter>
             </Card>

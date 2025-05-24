@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
@@ -17,50 +16,50 @@ import {
 const Downloads = () => {
   // Sample documents for different categories
   const admissionDocs = [
-    { id: 1, name: "Admission Form 2023-24", size: "1.2 MB", type: "PDF", lastUpdated: "May 15, 2023" },
-    { id: 2, name: "Prospectus 2023-24", size: "4.8 MB", type: "PDF", lastUpdated: "April 30, 2023" },
-    { id: 3, name: "Fee Structure", size: "820 KB", type: "PDF", lastUpdated: "May 5, 2023" },
-    { id: 4, name: "Admission Guidelines", size: "1.5 MB", type: "PDF", lastUpdated: "May 2, 2023" },
-    { id: 5, name: "Required Documents Checklist", size: "650 KB", type: "PDF", lastUpdated: "May 10, 2023" },
-    { id: 6, name: "Hostel Application Form", size: "780 KB", type: "PDF", lastUpdated: "May 12, 2023" },
-    { id: 7, name: "Transport Request Form", size: "540 KB", type: "PDF", lastUpdated: "May 8, 2023" },
+    { id: 1, name: "Admission Form 2023-24", size: "1.2 MB", type: "PDF", lastUpdated: "May 15, 2023", downloadUrl: "/downloads/admission-form-2023-24.pdf" },
+    { id: 2, name: "Prospectus 2023-24", size: "4.8 MB", type: "PDF", lastUpdated: "April 30, 2023", downloadUrl: "/downloads/prospectus-2023-24.pdf" },
+    { id: 3, name: "Fee Structure", size: "820 KB", type: "PDF", lastUpdated: "May 5, 2023", downloadUrl: "/downloads/fee-structure.pdf" },
+    { id: 4, name: "Admission Guidelines", size: "1.5 MB", type: "PDF", lastUpdated: "May 2, 2023", downloadUrl: "/downloads/admission-guidelines.pdf" },
+    { id: 5, name: "Required Documents Checklist", size: "650 KB", type: "PDF", lastUpdated: "May 10, 2023", downloadUrl: "/downloads/required-documents-checklist.pdf" },
+    { id: 6, name: "Hostel Application Form", size: "780 KB", type: "PDF", lastUpdated: "May 12, 2023", downloadUrl: "/downloads/hostel-application-form.pdf" },
+    { id: 7, name: "Transport Request Form", size: "540 KB", type: "PDF", lastUpdated: "May 8, 2023", downloadUrl: "/downloads/transport-request-form.pdf" },
   ];
   
   const academicDocs = [
-    { id: 1, name: "Academic Calendar 2023-24", size: "1.6 MB", type: "PDF", lastUpdated: "June 5, 2023" },
-    { id: 2, name: "Examination Schedule - Odd Semester", size: "820 KB", type: "PDF", lastUpdated: "September 10, 2023" },
-    { id: 3, name: "Syllabus - Computer Engineering", size: "3.2 MB", type: "PDF", lastUpdated: "July 15, 2023" },
-    { id: 4, name: "Syllabus - Civil Engineering", size: "2.8 MB", type: "PDF", lastUpdated: "July 15, 2023" },
-    { id: 5, name: "Syllabus - Mechanical Engineering", size: "3.1 MB", type: "PDF", lastUpdated: "July 15, 2023" },
-    { id: 6, name: "Syllabus - AI & ML", size: "2.5 MB", type: "PDF", lastUpdated: "July 15, 2023" },
-    { id: 7, name: "Laboratory Manual - Basic Engineering", size: "4.2 MB", type: "PDF", lastUpdated: "August 2, 2023" },
-    { id: 8, name: "Student Attendance Format", size: "620 KB", type: "XLSX", lastUpdated: "July 20, 2023" },
+    { id: 1, name: "Academic Calendar 2023-24", size: "1.6 MB", type: "PDF", lastUpdated: "June 5, 2023", downloadUrl: "/downloads/academic-calendar-2023-24.pdf" },
+    { id: 2, name: "Examination Schedule - Odd Semester", size: "820 KB", type: "PDF", lastUpdated: "September 10, 2023", downloadUrl: "/downloads/exam-schedule-odd-sem.pdf" },
+    { id: 3, name: "Syllabus - Computer Engineering", size: "3.2 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-computer-engg.pdf" },
+    { id: 4, name: "Syllabus - Civil Engineering", size: "2.8 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-civil-engg.pdf" },
+    { id: 5, name: "Syllabus - Mechanical Engineering", size: "3.1 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-mech-engg.pdf" },
+    { id: 6, name: "Syllabus - AI & ML", size: "2.5 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-ai-ml.pdf" },
+    { id: 7, name: "Laboratory Manual - Basic Engineering", size: "4.2 MB", type: "PDF", lastUpdated: "August 2, 2023", downloadUrl: "/downloads/lab-manual-basic-engg.pdf" },
+    { id: 8, name: "Student Attendance Format", size: "620 KB", type: "XLSX", lastUpdated: "July 20, 2023", downloadUrl: "/downloads/student-attendance-format.xlsx" },
   ];
   
   const scholarshipDocs = [
-    { id: 1, name: "Government Scholarship Form", size: "1.1 MB", type: "PDF", lastUpdated: "July 10, 2023" },
-    { id: 2, name: "Scholarship Schemes Information", size: "1.8 MB", type: "PDF", lastUpdated: "July 5, 2023" },
-    { id: 3, name: "Merit Scholarship Application", size: "950 KB", type: "PDF", lastUpdated: "July 12, 2023" },
-    { id: 4, name: "SC/ST Scholarship Guidelines", size: "1.3 MB", type: "PDF", lastUpdated: "July 8, 2023" },
-    { id: 5, name: "EBC Scholarship Form", size: "980 KB", type: "PDF", lastUpdated: "July 15, 2023" },
+    { id: 1, name: "Government Scholarship Form", size: "1.1 MB", type: "PDF", lastUpdated: "July 10, 2023", downloadUrl: "/downloads/govt-scholarship-form.pdf" },
+    { id: 2, name: "Scholarship Schemes Information", size: "1.8 MB", type: "PDF", lastUpdated: "July 5, 2023", downloadUrl: "/downloads/scholarship-schemes-info.pdf" },
+    { id: 3, name: "Merit Scholarship Application", size: "950 KB", type: "PDF", lastUpdated: "July 12, 2023", downloadUrl: "/downloads/merit-scholarship-application.pdf" },
+    { id: 4, name: "SC/ST Scholarship Guidelines", size: "1.3 MB", type: "PDF", lastUpdated: "July 8, 2023", downloadUrl: "/downloads/scst-scholarship-guidelines.pdf" },
+    { id: 5, name: "EBC Scholarship Form", size: "980 KB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/ebc-scholarship-form.pdf" },
   ];
   
   const formsDocs = [
-    { id: 1, name: "No Objection Certificate Request", size: "720 KB", type: "PDF", lastUpdated: "August 5, 2023" },
-    { id: 2, name: "Bonafide Certificate Request", size: "680 KB", type: "PDF", lastUpdated: "August 5, 2023" },
-    { id: 3, name: "Leave Application Form", size: "520 KB", type: "PDF", lastUpdated: "July 25, 2023" },
-    { id: 4, name: "Character Certificate Request", size: "650 KB", type: "PDF", lastUpdated: "August 5, 2023" },
-    { id: 5, name: "Industrial Visit Permission", size: "780 KB", type: "PDF", lastUpdated: "July 28, 2023" },
-    { id: 6, name: "Library Membership Form", size: "620 KB", type: "PDF", lastUpdated: "July 20, 2023" },
-    { id: 7, name: "Alumni Registration Form", size: "850 KB", type: "PDF", lastUpdated: "June 15, 2023" },
+    { id: 1, name: "No Objection Certificate Request", size: "720 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/noc-request.pdf" },
+    { id: 2, name: "Bonafide Certificate Request", size: "680 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/bonafide-request.pdf" },
+    { id: 3, name: "Leave Application Form", size: "520 KB", type: "PDF", lastUpdated: "July 25, 2023", downloadUrl: "/downloads/leave-application-form.pdf" },
+    { id: 4, name: "Character Certificate Request", size: "650 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/character-certificate-request.pdf" },
+    { id: 5, name: "Industrial Visit Permission", size: "780 KB", type: "PDF", lastUpdated: "July 28, 2023", downloadUrl: "/downloads/industrial-visit-permission.pdf" },
+    { id: 6, name: "Library Membership Form", size: "620 KB", type: "PDF", lastUpdated: "July 20, 2023", downloadUrl: "/downloads/library-membership-form.pdf" },
+    { id: 7, name: "Alumni Registration Form", size: "850 KB", type: "PDF", lastUpdated: "June 15, 2023", downloadUrl: "/downloads/alumni-registration-form.pdf" },
   ];
   
   const naacDocs = [
-    { id: 1, name: "Self Study Report (SSR) 2022", size: "15.8 MB", type: "PDF", lastUpdated: "December 10, 2022" },
-    { id: 2, name: "Annual Quality Assurance Report 2022-23", size: "8.2 MB", type: "PDF", lastUpdated: "June 30, 2023" },
-    { id: 3, name: "NAAC Metrics Documentation", size: "12.5 MB", type: "PDF", lastUpdated: "January 15, 2023" },
-    { id: 4, name: "Best Practices Documentation", size: "3.8 MB", type: "PDF", lastUpdated: "February 10, 2023" },
-    { id: 5, name: "Student Satisfaction Survey Report", size: "5.2 MB", type: "PDF", lastUpdated: "March 25, 2023" },
+    { id: 1, name: "Self Study Report (SSR) 2022", size: "15.8 MB", type: "PDF", lastUpdated: "December 10, 2022", downloadUrl: "/downloads/naac-ssr-2022.pdf" },
+    { id: 2, name: "Annual Quality Assurance Report 2022-23", size: "8.2 MB", type: "PDF", lastUpdated: "June 30, 2023", downloadUrl: "/downloads/naac-aqar-2022-23.pdf" },
+    { id: 3, name: "NAAC Metrics Documentation", size: "12.5 MB", type: "PDF", lastUpdated: "January 15, 2023", downloadUrl: "/downloads/naac-metrics-documentation.pdf" },
+    { id: 4, name: "Best Practices Documentation", size: "3.8 MB", type: "PDF", lastUpdated: "February 10, 2023", downloadUrl: "/downloads/best-practices-documentation.pdf" },
+    { id: 5, name: "Student Satisfaction Survey Report", size: "5.2 MB", type: "PDF", lastUpdated: "March 25, 2023", downloadUrl: "/downloads/student-satisfaction-survey.pdf" },
   ];
 
   // Function to render document table
@@ -89,10 +88,18 @@ const Downloads = () => {
                     <Eye className="h-4 w-4" />
                     <span className="hidden sm:inline">View</span>
                   </Button>
-                  <Button size="sm" className="flex items-center gap-1">
-                    <Download className="h-4 w-4" />
-                    <span className="hidden sm:inline">Download</span>
-                  </Button>
+                  {/* Download button with link */}
+                  <a
+                    href={doc.downloadUrl || "#"}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button size="sm" className="flex items-center gap-1">
+                      <Download className="h-4 w-4" />
+                      <span className="hidden sm:inline">Download</span>
+                    </Button>
+                  </a>
                 </div>
               </TableCell>
             </TableRow>

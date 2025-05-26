@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      {/* ✅ Contact Bar (Visible on all devices) */}
+      {/* Contact Bar (Visible on all devices) */}
       <div className="bg-gray-800 text-white py-2 px-4 z-50 relative">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center gap-2">
@@ -41,12 +41,12 @@ const Header = () => {
         </div>
       </div>
 
-      {/* ✅ Desktop Header */}
+      {/* Desktop Header */}
       <div className="hidden lg:block sticky top-0 bg-white shadow z-40">
         <div className="container mx-auto px-4 pt-3 pb-2 border-b border-gray-200">
           <div className="flex gap-6 items-start">
             <img
-              src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
+              src="https://via.placeholder.com/80"
               alt="Hi-Tech Institute Logo"
               className="w-20 h-20 object-contain"
             />
@@ -87,14 +87,17 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* ✅ Mobile Header */}
+      {/* Mobile Header */}
       <div className="block lg:hidden sticky top-0 bg-white shadow z-40">
         <div className="flex items-center justify-between px-4 py-2 border-b border-gray-200">
-          <img
-            src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
-            alt="Logo"
-            className="w-12 h-12 object-contain"
-          />
+          <div className="flex items-center gap-2">
+            <img
+              src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
+              alt="Logo"
+              className="w-12 h-12 object-contain"
+            />
+            <span className="text-lg font-bold text-blue-900">HIT College</span>
+          </div>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
             {isMenuOpen ? (
               <X className="w-6 h-6 text-blue-900" />

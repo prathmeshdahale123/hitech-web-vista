@@ -46,7 +46,7 @@ const Header = () => {
         <div className="container mx-auto px-4 pt-3 pb-2 border-b border-gray-200">
           <div className="flex gap-6 items-start">
             <img
-              src="https://via.placeholder.com/80"
+              src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
               alt="Hi-Tech Institute Logo"
               className="w-20 h-20 object-contain"
             />

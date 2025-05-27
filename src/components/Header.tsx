@@ -89,15 +89,29 @@ const Header = () => {
 
       {/* Mobile Header */}
       <div className="block lg:hidden sticky top-0 bg-white shadow z-40">
-        <div className="flex items-center justify-between px-4 py-2 border-b border-gray-200">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+          <div className="flex items-start gap-3">
             <img
               src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
               alt="Logo"
               className="w-12 h-12 object-contain"
             />
-            <span className="text-lg font-bold text-blue-900">HIT College</span>
+            <div className="leading-tight">
+              <p className="text-[9px] font-semibold text-blue-800">
+                Bhartiya Gramin Punarrachna Sanstha's
+              </p>
+              <p className="text-base font-bold text-blue-900">
+                Hi-Tech Institute of Technology
+              </p>
+              <p className="text-[7px] text-blue-600">
+                A Pioneer to shape global Technocrats
+              </p>
+              <p className="text-[7px] text-gray-600">
+                (Approved by AICTE, DTE Govt. of Maharashtra & DBATU)
+              </p>
+            </div>
           </div>
+
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
             {isMenuOpen ? (
               <X className="w-6 h-6 text-blue-900" />

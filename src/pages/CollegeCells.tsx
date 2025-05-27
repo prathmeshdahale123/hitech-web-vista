@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
@@ -34,11 +33,13 @@ const cells = [
       "To provide counseling services for victims of harassment or discrimination"
     ],
     committee: [
-      { name: "Dr. Anjali Sharma", role: "Chairperson", email: "anjali.sharma@hitech.edu.in" },
-      { name: "Prof. Priya Patil", role: "Member Secretary", email: "priya.patil@hitech.edu.in" },
-      { name: "Ms. Sunita Jadhav", role: "External Member", email: "sunita.jadhav@gmail.com" },
-      { name: "Dr. Radhika Gokhale", role: "Faculty Representative", email: "radhika.gokhale@hitech.edu.in" },
-      { name: "Ms. Sneha Patel", role: "Student Representative", email: "sneha.p@hitech.edu.in" }
+      { name: "B. N. Vispute", title: "Assistant Professor", post: "Chairman (Presiding Officer)", email: "b.n.vispute@hitech.edu.in" },
+      { name: "Mrs. Harshala E Jadhav", title: "Social Worker", post: "Member", email: "harshala.jadhav@hitech.edu.in" },
+      { name: "Dr. Krupal Pawar", title: "Principal", post: "Member", email: "krupal.pawar@hitech.edu.in" },
+      { name: "Prof. Kalyani Kondekar", title: "Assistant Professor", post: "Member", email: "kalyani.kondekar@hitech.edu.in" },
+      { name: "Prof. Lata Jadhav", title: "Assistant Professor", post: "Member", email: "lata.jadhav@hitech.edu.in" },
+      { name: "K. R. Ghule", title: "Assistant Professor", post: "Member", email: "k.r.ghule@hitech.edu.in" },
+      { name: "Supriya Kolekar", title: "FE, Student", post: "Student Representative", email: "supriya.kolekar@hitech.edu.in" }
     ]
   },
   {
@@ -54,31 +55,42 @@ const cells = [
       "To establish easy reporting mechanisms for ragging incidents"
     ],
     committee: [
-      { name: "Dr. Rajesh Kumar", role: "Chairperson", email: "rajesh.kumar@hitech.edu.in" },
-      { name: "Prof. Mahesh Singh", role: "Member Secretary", email: "mahesh.singh@hitech.edu.in" },
-      { name: "Mr. Sanjay Deshmukh", role: "Police Representative", email: "sanjay.deshmukh@police.gov.in" },
-      { name: "Dr. Anand Joshi", role: "Faculty Member", email: "anand.joshi@hitech.edu.in" },
-      { name: "Mr. Rahul Patil", role: "Student Representative", email: "rahul.p@hitech.edu.in" }
+      { name: "Dr. N. S. Sirdeshpande", role: "Principal", email: "n.s.sirdeshpande@hitech.edu.in" },
+      { name: "Adv. Dipali Jape", role: "Advocate", email: "dipali.jape@hitech.edu.in" },
+      { name: "Prof. R. F. Siddiqui", role: "Education", email: "r.f.siddiqui@hitech.edu.in" },
+      { name: "Mr. Umbare Sir", role: "Police Representative", email: "umbare.sir@police.gov.in" },
+      { name: "Mr. R. K. Bharat", role: "Media Representative", email: "r.k.bharat@hitech.edu.in" },
+      { name: "Dr. Sarika Kotgire", role: "Health Representative", email: "sarika.kotgire@hitech.edu.in" },
+      { name: "Prof. Amol S. Adkine", role: "Education", email: "amol.s.adkine@hitech.edu.in" },
+      { name: "Mr. Prashant Kadam", role: "Non-Govt. Organization Representative", email: "prashant.kadam@hitech.edu.in" },
+      { name: "Mr. Sahebrao Shelke", role: "Parent Representative", email: "sahebrao.shelke@hitech.edu.in" },
+      { name: "Miss. Mayuri Hiwale", role: "Student Representative", email: "mayuri.hiwale@hitech.edu.in" },
+      { name: "Mr. Bhagchand B Jadhav", role: "Non-Teaching Representative", email: "bhagchand.jadhav@hitech.edu.in" },
+      { name: "Mr. Aftab Shaikh", role: "Student Representative", email: "aftab.shaikh@hitech.edu.in" }
     ]
   },
   {
     id: "internal-complaint",
     name: "Internal Complaint Committee",
     icon: <BadgeAlert className="h-12 w-12 text-blue-700" />,
-    description: "Established as per the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013, to address complaints of sexual harassment.",
+    description: "Focused on addressing complaints related to harassment and ensuring a safe and inclusive environment for all members of the institute.",
     objectives: [
-      "To create and maintain a safe working environment for all employees and students",
-      "To implement the Sexual Harassment of Women at Workplace Act, 2013",
-      "To provide a fair and timely mechanism for addressing sexual harassment complaints",
-      "To recommend appropriate action against the guilty as per institutional rules",
-      "To organize awareness programs on workplace harassment"
+      "To prevent and address issues of harassment and discrimination",
+      "To ensure a safe and respectful workplace for all",
+      "To conduct inquiries into complaints in a fair and confidential manner",
+      "To promote gender sensitization and awareness programs",
+      "To comply with legal and regulatory frameworks"
     ],
     committee: [
-      { name: "Dr. Sarita Verma", role: "Presiding Officer", email: "sarita.verma@hitech.edu.in" },
-      { name: "Prof. Deepika Sharma", role: "Member", email: "deepika.sharma@hitech.edu.in" },
-      { name: "Adv. Meera Kulkarni", role: "External Legal Expert", email: "meera.kulkarni@legal.com" },
-      { name: "Mr. Prakash Patil", role: "Administrative Staff", email: "prakash.patil@hitech.edu.in" },
-      { name: "Ms. Vidya Mohan", role: "NGO Representative", email: "vidya.mohan@ngo.org" }
+      { name: "Prof. K. S. Pinnalwar", title: "Teaching Faculty", post: "Member", email: "k.s.pinnalwar@hitech.edu.in" },
+      { name: "Dr. B. P. Pingle", title: "Professor", post: "Chair Person", email: "b.p.pingle@hitech.edu.in" },
+      { name: "Prof. Kalyani Kondekar", title: "Teaching Faculty", post: "Member", email: "kalyani.kondekar@hitech.edu.in" },
+      { name: "P. B. Jogas", title: "Non-Teaching Faculty", post: "Member", email: "p.b.jogas@hitech.edu.in" },
+      { name: "B. R. Nikam", title: "Non-Teaching Faculty", post: "Member", email: "b.r.nikam@hitech.edu.in" },
+      { name: "Miss. Radha Giri", title: "Student", post: "Student", email: "radha.giri@hitech.edu.in" },
+      { name: "Priyanka Khamgaonkar", title: "Student", post: "Student", email: "priyanka.khamgaonkar@hitech.edu.in" },
+      { name: "Mangal Kivansara", title: "Non-Teaching Faculty", post: "Member", email: "mangal.kivansara@hitech.edu.in" },
+      { name: "Miss. Aarti Shinde", title: "Student", post: "Student", email: "aarti.shinde@hitech.edu.in" }
     ]
   },
   {
@@ -102,23 +114,94 @@ const cells = [
     ]
   },
   {
-    id: "research",
-    name: "Research & Innovation Cell",
+    id: "grievance-redressal",
+    name: "Grievance Redressal Committee",
     icon: <BookMarked className="h-12 w-12 text-blue-700" />,
-    description: "Promoting research culture among faculty and students by facilitating research projects, publications, and innovations in various engineering domains.",
+    description: "Dedicated to addressing and resolving grievances of students, faculty, and staff to ensure a fair and conducive environment.",
     objectives: [
-      "To enhance research capabilities of faculty and students",
-      "To promote publication of research papers in reputed journals",
-      "To facilitate participation in conferences and seminars",
-      "To secure research grants from funding agencies",
-      "To encourage patenting of innovative ideas and products"
+      "To provide a platform for addressing grievances in a transparent manner",
+      "To ensure timely resolution of issues raised by stakeholders",
+      "To maintain fairness and impartiality in grievance handling",
+      "To promote a harmonious academic and administrative environment",
+      "To comply with regulatory guidelines for grievance redressal"
     ],
     committee: [
-      { name: "Dr. Manish Tiwari", role: "Research Director", email: "manish.tiwari@hitech.edu.in" },
-      { name: "Dr. Pradeep Kumar", role: "Coordinator", email: "pradeep.kumar@hitech.edu.in" },
-      { name: "Prof. Sunita Gupta", role: "Faculty Member", email: "sunita.gupta@hitech.edu.in" },
-      { name: "Dr. Rajiv Mishra", role: "External Research Advisor", email: "rajiv.mishra@research.org" },
-      { name: "Ms. Priyanka Singh", role: "Research Assistant", email: "priyanka.singh@hitech.edu.in" }
+      { name: "Dr. N. S. Sirdeshpande", role: "Principal", post: "Chairman", contact: "8459404542", email: "n.s.sirdeshpande@hitech.edu.in" },
+      { name: "Prof. Amol S. Adkine", role: "H.O.D MECH", post: "Member", contact: "9545333318", email: "amol.s.adkine@hitech.edu.in" },
+      { name: "Prof. Pratap M. Mohite", role: "H.O.D. CSE", post: "Member", contact: "7276120805", email: "pratap.mohite@hitech.edu.in" },
+      { name: "Prof. R. F. Siddiqui", role: "H.O.D. CIVIL", post: "Member", contact: "9860617213", email: "r.f.siddiqui@hitech.edu.in" },
+      { name: "Prof. Bhavana P. Pingle", role: "H.O.D. FE", post: "Member", contact: "8805020507", email: "bhavana.pingle@hitech.edu.in" },
+      { name: "Prof. S. L. Sonawane", role: "Teaching Representative", post: "Member", contact: "8007113636", email: "s.l.sonawane@hitech.edu.in" },
+      { name: "Rushikesh Prembhare", role: "Student Representative", post: "Member", contact: "8378864100", email: "rushikesh.prembhare@hitech.edu.in" },
+      { name: "University Nominee", role: "Ombudsman", post: "Member", contact: "Waiting From University", email: "ombudsman@hitech.edu.in" }
+    ]
+  },
+  {
+    id: "sc-st",
+    name: "SC/ST Committee",
+    icon: <BookMarked className="h-12 w-12 text-blue-700" />,
+    description: "Committed to promoting the welfare of SC/ST students and staff, addressing their grievances, and ensuring equal opportunities.",
+    objectives: [
+      "To ensure equal opportunities for SC/ST students and staff",
+      "To address grievances specific to SC/ST communities",
+      "To promote awareness about SC/ST welfare schemes and policies",
+      "To facilitate scholarships and support programs",
+      "To foster an inclusive environment free from discrimination"
+    ],
+    committee: [
+      { name: "Dr. N. S. Sirdeshpande", title: "Chairman", post: "Chairman", email: "n.s.sirdeshpande@hitech.edu.in" },
+      { name: "Prof. Govind Dhage", title: "Member", post: "Member", email: "govind.dhage@hitech.edu.in" },
+      { name: "Prof. Sujata Sonawane", title: "Member", post: "Member", email: "sujata.sonawane@hitech.edu.in" },
+      { name: "Prof. A. D. Yetalkar", title: "Member", post: "Member", email: "a.d.yetalkar@hitech.edu.in" },
+      { name: "Prof. Sanjay Sambhalkar", title: "Member (Social Worker)", post: "Member", email: "sanjay.sambhalkar@hitech.edu.in" }
+    ]
+  },
+  {
+    id: "industry-institute-interaction",
+    name: "Industry Institute Interaction Cell (IIIC)",
+    icon: <BookMarked className="h-12 w-12 text-blue-700" />,
+    description: "Bridging the gap between industry and academia by fostering collaborations, internships, and industry-oriented projects.",
+    objectives: [
+      "To strengthen ties between the institute and industry",
+      "To facilitate internships and industry exposure for students",
+      "To organize workshops and guest lectures by industry experts",
+      "To promote industry-sponsored research and projects",
+      "To enhance employability through skill development programs"
+    ],
+    committee: [
+      { name: "Dr. N. S. Sirdeshpande", role: "Chairperson", email: "n.s.sirdeshpande@hitech.edu.in" },
+      { name: "Prof. Janardhan Bhor", role: "Member", email: "janardhan.bhor@hitech.edu.in" },
+      { name: "Prof. Sohel Shaikh", role: "Member", email: "sohel.shaikh@hitech.edu.in" },
+      { name: "Prof. Rishikesh Aher", role: "Member", email: "rishikesh.aher@hitech.edu.in" },
+      { name: "Prof. Sujata L. Sonawane", role: "Member", email: "sujata.l.sonawane@hitech.edu.in" }
+    ]
+  },
+  {
+    id: "institute-innovation",
+    name: "Institute Innovation Cell (IIC)",
+    icon: <BookMarked className="h-12 w-12 text-blue-700" />,
+    description: "Fostering innovation and entrepreneurship among students and faculty through structured programs and activities.",
+    objectives: [
+      "To promote a culture of innovation and entrepreneurship",
+      "To support startup initiatives and intellectual property rights",
+      "To organize innovation-driven workshops and competitions",
+      "To facilitate internships and industry collaborations",
+      "To contribute to national innovation rankings like ARIIA and NIRF"
+    ],
+    committee: [
+      { name: "Prof. Janardhan Bhor", role: "Teaching", post: "President", email: "janardhan.bhor@hitech.edu.in" },
+      { name: "Prof. C. P. Jadhav", role: "Teaching", post: "Social Media", email: "c.p.jadhav@hitech.edu.in" },
+      { name: "Prof. K. S. Gore", role: "Teaching", post: "Convener", email: "k.s.gore@hitech.edu.in" },
+      { name: "Prof. S. L. Sonawane", role: "Teacher", post: "Innovation Activity Coordinator", email: "s.l.sonawane@hitech.edu.in" },
+      { name: "Prof. S. T. Khajekar", role: "Teacher", post: "Internship Activity Coordinator", email: "s.t.khajekar@hitech.edu.in" },
+      { name: "Prof. K. S. Kondekar", role: "Teacher", post: "IPR Activity Coordinator", email: "k.s.kondekar@hitech.edu.in" },
+      { name: "Prof. A. D. Yetalkar", role: "Teacher", post: "Member", email: "a.d.yetalkar@hitech.edu.in" },
+      { name: "Prof. P. R. Muley", role: "Teacher", post: "ARIIA Coordinator", email: "p.r.muley@hitech.edu.in" },
+      { name: "Prof. R. S. Aher", role: "Teacher", post: "NIRF Coordinator", email: "r.s.aher@hitech.edu.in" },
+      { name: "Prof. S. K. Shaikh", role: "Teaching", post: "Start-up Coordinator", email: "s.k.shaikh@hitech.edu.in" },
+      { name: "Prof. G. Kaushik", role: "Teaching", post: "Member", email: "g.kaushik@hitech.edu.in" },
+      { name: "Mr. S. Borde", role: "Librarian", post: "Member", email: "s.borde@hitech.edu.in" },
+      { name: "Mr. Jyotiba Patil", role: "External Expert", post: "Member", email: "jyotiba.patil@hitech.edu.in" }
     ]
   }
 ];
@@ -153,12 +236,15 @@ const CollegeCells = () => {
         </div>
         
         <Tabs defaultValue="women-grievance">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4">
             <TabsTrigger value="women-grievance">Women Grievance</TabsTrigger>
             <TabsTrigger value="anti-ragging">Anti-ragging</TabsTrigger>
             <TabsTrigger value="internal-complaint">ICC</TabsTrigger>
             <TabsTrigger value="entrepreneurship">E-Cell</TabsTrigger>
-            <TabsTrigger value="research">R&I Cell</TabsTrigger>
+            <TabsTrigger value="grievance-redressal">Grievance Redressal</TabsTrigger>
+            <TabsTrigger value="sc-st">SC/ST Committee</TabsTrigger>
+            <TabsTrigger value="industry-institute-interaction">IIIC</TabsTrigger>
+            <TabsTrigger value="institute-innovation">IIC</TabsTrigger>
           </TabsList>
           
           {cells.map((cell) => (
@@ -210,7 +296,10 @@ const CollegeCells = () => {
                         {cell.committee.map((member, index) => (
                           <li key={index} className="border-b border-gray-200 last:border-0 pb-3 last:pb-0">
                             <p className="font-medium text-blue-800">{member.name}</p>
-                            <p className="text-gray-600 text-sm">{member.role}</p>
+                            {member.role && <p className="text-gray-600 text-sm">{member.role}</p>}
+                            {member.title && <p className="text-gray-600 text-sm">{member.title}</p>}
+                            {member.post && <p className="text-gray-600 text-sm">{member.post}</p>}
+                            {member.contact && <p className="text-gray-600 text-sm">{member.contact}</p>}
                             <p className="text-gray-500 text-sm">{member.email}</p>
                           </li>
                         ))}

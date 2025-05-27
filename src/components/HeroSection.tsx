@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -19,9 +20,11 @@ const HeroSection = () => {
             A Pioneer to shape global Technocrats
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
-              Explore Courses
-            </button>
+            <Link to="/departments">
+              <button className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+                Explore Courses
+              </button>
+            </Link>
             {/* <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors">
               Virtual Tour
             </button> */}

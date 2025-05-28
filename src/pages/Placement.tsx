@@ -30,19 +30,19 @@ import {
 const Placement = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const partners = [
-    {
-      name: "Tudip learning",
-      logo: "https://tudiplearning.com/wp-content/uploads/2024/07/Tudip_Learning_Logo.webp",
-    },
-    {
-      name: "Persistent Systems",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/06/Persistent_Systems_Logo.svg",
-    },
-    {
-      name: "Quick Heal",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Quick-Heal-Logo.png/250px-Quick-Heal-Logo.png",
-    },
+ const partners = [
+      {
+        name: "Tudip learning",
+        logo: "https://tudiplearning.com/wp-content/uploads/2024/07/Tudip_Learning_Logo.webp",
+      },
+      {
+        name: "Persistent Systems",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/0/06/Persistent_Systems_Logo.svg",
+      },
+      {
+        name: "Quick Heal",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Quick-Heal-Logo.png/250px-Quick-Heal-Logo.png",
+      },
     {
       name: "Bentley Systems",
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bentley_Systems_wordmark.svg/250px-Bentley_Systems_wordmark.svg.png",
@@ -52,20 +52,21 @@ const Placement = () => {
       logo: "https://winjit.com/themes/custom/winjit_subtheme/images/logo/logo.svg",
     },
     {
-      name: "Techno Vision",
-      logo: "https://www.technovision.tech/wp-content/uploads/2023/11/cropped-283740202_1339521356542826_5989151994353489062_n-removebg-preview.png",
-    },
-    {
       name: "Infosys",
       logo: "https://imgs.search.brave.com/ub6igt8xl2B8ypkP8h91JVhAUG_UBccUb32iQExvrn8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85Lzk1L0lu/Zm9zeXNfbG9nby5z/dmcvMjUwcHgtSW5m/b3N5c19sb2dvLnN2/Zy5wbmc",
     },
-    {
-      name: "TCS",
-      logo: "https://imgs.search.brave.com/3_hZ2a0aPUvZz7Qd9muqtxdvNN2RxlCqOrong0oUCW4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2F5dXAuY29tL2Nk/bi9jb21wYW55X2xv/Z28vcFY1YzZxQUM2/eF8yMDIxMDMxMi5q/cGc",
-    },
+  
     {
       name: "Wipro",
       logo: "https://imgs.search.brave.com/yM-c0JUqXyf4Em09vki34-UH2zU3L3sWEWsqWR21DC4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi84Lzg5L1dp/cHJvX25ld19sb2dv/LnN2Zy81MTJweC1X/aXByb19uZXdfbG9n/by5zdmcucG5n",
+    },
+     {
+      name: "Techno Vision",
+      logo: "https://www.technovision.tech/wp-content/uploads/2023/11/cropped-283740202_1339521356542826_5989151994353489062_n-removebg-preview.png",
+    }, 
+     {
+      name: "TCS",
+      logo: "https://imgs.search.brave.com/3_hZ2a0aPUvZz7Qd9muqtxdvNN2RxlCqOrong0oUCW4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2F5dXAuY29tL2Nk/bi9jb21wYW55X2xv/Z28vcFY1YzZxQUM2/eF8yMDIxMDMxMi5q/cGc",
     },
   ];
 
@@ -113,6 +114,16 @@ const Placement = () => {
       duration: "Ongoing",
       target: "All Students"
     }
+  ];
+
+  // Sample MoU data (replace with actual data as needed)
+
+  const mouData = [
+    { id: 1, description: "MoU between H.I.T. and Mahapaivesh Environment Research & Consultancy Private Ltd" },
+    { id: 2, description: "MoU between H.I.T. and Sara Electromechanical Engineering" },
+    { id: 3, description: "MoU between H.I.T. and Mauli refrigeration & AC Services" },
+    { id: 4, description: "MoU between H.I.T. and R.K. IT Solution" },
+    { id: 5, description: "MoU between H.I.T. and DNR INDIA AUTO TECH PVT. LTD" },
   ];
 
   useEffect(() => {
@@ -199,41 +210,6 @@ const Placement = () => {
           </div>
         </div>
         
-        {/* <div className="mb-8 sm:mb-12">
-          <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">Placement Statistics</h2>
-          
-          <div className="overflow-x-auto">
-            <Table>
-              <TableHeader>
-                <TableRow className="bg-blue-900 text-white">
-                  <TableHead className="text-xs sm:text-sm">Academic Year</TableHead>
-                  <TableHead className="text-xs sm:text-sm">Eligible Students</TableHead>
-                  <TableHead className="text-xs sm:text-sm">Placed Students</TableHead>
-                  <TableHead className="text-xs sm:text-sm">Placement %</TableHead>
-                  <TableHead className="text-xs sm:text-sm">Highest Package (LPA)</TableHead>
-                  <TableHead className="text-xs sm:text-sm">Average Package (LPA)</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {placementStats.map((stat, index) => (
-                  <TableRow key={index} className={index % 2 === 0 ? "bg-blue-50" : "bg-white"}>
-                    <TableCell className="font-medium text-xs sm:text-sm">{stat.year}</TableCell>
-                    <TableCell className="text-xs sm:text-sm">{stat.eligibleStudents}</TableCell>
-                    <TableCell className="text-xs sm:text-sm">{stat.placed}</TableCell>
-                    <TableCell className="text-xs sm:text-sm">{Math.round((stat.placed / stat.eligibleStudents) * 100)}%</TableCell>
-                    <TableCell className="text-xs sm:text-sm">₹ {stat.highestPackage} LPA</TableCell>
-                    <TableCell className="text-xs sm:text-sm">₹ {stat.averagePackage} LPA</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-          
-          <div className="mt-6 sm:mt-8 p-6 sm:p-8 bg-gray-100 rounded-lg flex items-center justify-center h-48 sm:h-64">
-            <p className="text-gray-500 text-sm sm:text-base">[Branch-wise Placement Statistics Chart]</p>
-          </div>
-        </div> */}
-        
         <section className="py-8 sm:py-16 bg-gray-100">
           <div className="container mx-auto px-4">
             <div className="text-center mb-8 sm:mb-12">
@@ -273,6 +249,31 @@ const Placement = () => {
             </div>
           </div>
         </section>
+
+        {/* MoU Table */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold text-blue-900 mb-6 text-center">
+            Memorandums of Understanding (MoUs) with Colleges
+          </h3>
+          <div className="bg-white rounded-lg shadow-md overflow-x-auto">
+            <table className="w-full text-left">
+              <thead>
+                <tr className="bg-blue-900 text-white">
+                  <th className="py-3 px-6 font-semibold text-sm sm:text-base">S.No.</th>
+                  <th className="py-3 px-6 font-semibold text-sm sm:text-base">MoU with College</th>
+                </tr>
+              </thead>
+              <tbody>
+                {mouData.map((mou) => (
+                  <tr key={mou.id} className="border-b hover:bg-gray-50">
+                    <td className="py-4 px-6 text-gray-600 text-sm sm:text-base">{mou.id}</td>
+                    <td className="py-4 px-6 text-gray-600 text-sm sm:text-base">{mou.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
         
         <div className="mb-8 sm:mb-12">
           <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">Training Programs</h2>
@@ -341,7 +342,7 @@ const Placement = () => {
             </div>
           </div>
           
-          <div className="bg-blue-50 p-4 sm:p-6 rounded-lg">
+          {/* <div className="bg-blue-50 p-4 sm:p-6 rounded-lg">
             <h3 className="text-lg sm:text-xl font-semibold text-blue-800 mb-4">For Recruiters</h3>
             <p className="text-gray-700 mb-4 text-sm sm:text-base">
               Companies interested in recruiting our students can contact the Training & Placement Cell. We provide excellent infrastructure for conducting recruitment drives, including seminar halls, computer labs, and interview rooms.
@@ -350,7 +351,7 @@ const Placement = () => {
               <Button className="text-xs sm:text-sm">Request Campus Recruitment</Button>
               <Button variant="outline" className="text-xs sm:text-sm">Download Placement Brochure</Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       

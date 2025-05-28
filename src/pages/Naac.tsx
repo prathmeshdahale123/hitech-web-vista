@@ -7,7 +7,7 @@ import {
   CardHeader, 
   CardTitle 
 } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { 
   FileText, 
   Calendar, 
@@ -27,7 +27,7 @@ const Naac = () => {
   ];
   
   const aqarReports = [
-    { id: 1, title: "AQAR Report 2022-23", size: "8.2 MB", date: "July 20, 2023", pdfUrl: "/public/NAAC-pdf/aqar-2022-23.pdf" },
+    { id: 1, title: "AQAR Report 2022 chiến-23", size: "8.2 MB", date: "July 20, 2023", pdfUrl: "/public/NAAC-pdf/aqar-2022-23.pdf" },
     { id: 2, title: "AQAR Report 2021-22", size: "7.5 MB", date: "July 15, 2022", pdfUrl: "/public/NAAC-pdf/aqar-2021-22.pdf" },
     { id: 3, title: "AQAR Report 2020-21", size: "7.1 MB", date: "July 12, 2021", pdfUrl: "/public/NAAC-pdf/aqar-2020-21.pdf" },
     { id: 4, title: "AQAR Report 2019-20", size: "6.8 MB", date: "July 10, 2020", pdfUrl: "/public/NAAC-pdf/aqar-2019-20.pdf" },
@@ -141,6 +141,17 @@ const Naac = () => {
     { sr: 18, name: "Prof. Amol S. Adkine", designation: "Assistant Professor and HOD (Mechanical Engineering)", position: "Coordinator" },
   ];
 
+
+  const dvvData = [
+    { id: 1, title: "Number of courses offered by the institution across all programs during the last 5 years", value: "Data not provided", pdfUrl: "public/DVV-pdf/COURSES AND STRUCTURE OF ALL DEPARTMENT.pdf" },
+    { id: 2, title: "Number of self-financed Programs offered by college", value: "Data not provided", pdfUrl: "public/DVV-pdf/AICTE FINAL DOC 12-17.pdf" },
+    { id: 3, title: "Total number of classrooms and seminar halls", value: "Data not provided", pdfUrl: "public/DVV-pdf/4.1.pdf" },
+    { id: 4, title: "Total Expenditure excluding salary year-wise during the last five years (INR in Lakhs)", value: "Data not provided", pdfUrl: "public/DVV-pdf/Balance sheet 2013.pdf" },
+    { id: 5, title: "Number of computers", value: "Data not provided", pdfUrl: "public/DVV-pdf/List of Computer with Details.pdf" },
+    { id: 6, title: "Unit cost of education including the salary component(INR in Lakhs)", value: "Data not provided", pdfUrl: "public/DVV-pdf/Balance sheet 2013.pdf" },
+    { id: 7, title: "Unit cost of education excluding the salary component(INR in Lakhs)", value: "Data not provided", pdfUrl: "public/DVV-pdf/Balance sheet 2013.pdf" },
+  ];
+
   const handleDownload = (url, title) => {
     try {
       console.log(`Downloading ${title} from ${url}`);
@@ -158,7 +169,7 @@ const Naac = () => {
       />
       
       <div className="container mx-auto px-4 py-12 flex-grow">
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className=" md:grid-cols-3 gap-8 mb-12">
           <div className="col-span-2">
             <h2 className="text-2xl font-bold text-blue-900 mb-4">About NAAC</h2>
             <p className="text-gray-700 mb-4">
@@ -170,43 +181,6 @@ const Naac = () => {
             <p className="text-gray-700">
               The NAAC accreditation process involves detailed self-assessment and peer evaluation of the institution's performance in various criteria such as curricular aspects, teaching-learning, research, infrastructure, student support, governance, and institutional values.
             </p>
-          </div>
-          
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-blue-800 mb-4">NAAC Status</h3>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                <div>
-                  <p className="font-medium">Accreditation Grade</p>
-                  <p className="text-3xl font-bold text-blue-900">B++</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                <div>
-                  <p className="font-medium">CGPA</p>
-                  <p className="text-xl font-bold text-blue-900">2.92</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                <div>
-                  <p className="font-medium">Validity Period</p>
-                  <p>May 15, 2022 to May 14, 2027</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                <div>
-                  <p className="font-medium">Cycle</p>
-                  <p>2nd Cycle</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         
@@ -231,14 +205,15 @@ const Naac = () => {
         </div>
         
         <Tabs defaultValue="ssr">
-          <TabsList className="grid w-full grid-cols-3">
+          <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="ssr">SSR Reports</TabsTrigger>
             <TabsTrigger value="aqar">AQAR Reports</TabsTrigger>
             <TabsTrigger value="calendar">Academic Calendar</TabsTrigger>
+            <TabsTrigger value="dvv">DVV Data</TabsTrigger>
           </TabsList>
           
           <TabsContent value="ssr" className="mt-6">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid ms:grid-rows-2 gap-2">
               <div>
                 <h3 className="text-xl font-semibold text-blue-800 mb-4">Self Study Report (SSR)</h3>
                 <p className="text-gray-700 mb-6">
@@ -280,35 +255,24 @@ const Naac = () => {
                     </a>
                   </Button>
                 </div>
-                
-                <div className="space-y-4">
-                  {ssrReports.map((report) => (
-                    <div key={report.id} className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                      <div className="flex items-start gap-3">
-                        <FileText className="h-5 w-5 text-blue-700 mt-1" />
-                        <div>
-                          <p className="font-medium">{report.title}</p>
-                          <p className="text-sm text-gray-500">Size: {report.size} | Uploaded: {report.date}</p>
-                        </div>
-                      </div>
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
-                        className="flex items-center gap-1"
-                        asChild
-                      >
-                        <a
-                          href={report.pdfUrl}
-                          download
-                          aria-label={`Download ${report.title}`}
-                          onClick={() => handleDownload(report.pdfUrl, report.title)}
-                        >
-                          <Download className="h-4 w-4" />
-                          <span>Download</span>
-                        </a>
-                      </Button>
-                    </div>
-                  ))}
+
+                <div className="mb-6">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="flex items-center gap-1"
+                    asChild
+                  >
+                    <a
+                      href="/public/NAAC-pdf/FINAL SSR report.pdf"
+                      download
+                      aria-label="Download SSR Report"
+                      onClick={() => handleDownload("/public/NAAC-pdf/FINAL SSR report.pdf", "SSR Report 2022-23")}
+                    >
+                      <Download className="h-4 w-4" />
+                      <span>Download S.S.R Report</span>
+                    </a>
+                  </Button>
                 </div>
               </div>
               
@@ -515,6 +479,70 @@ const Naac = () => {
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="dvv" className="mt-6">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-semibold text-blue-800 mb-4">Data Validation and Verification (DVV)</h3>
+                <p className="text-gray-700 mb-6">
+                  The Data Validation and Verification (DVV) section provides key institutional metrics submitted as part of the NAAC accreditation process. These metrics include details about courses, programs, infrastructure, expenditure, and educational costs.
+                </p>
+                
+                <div className="space-y-4">
+                  {dvvData.map((item) => (
+                    <div key={item.id} className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
+                      <div className="flex items-start gap-3">
+                        <FileText className="h-5 w-5 text-blue-700 mt-1" />
+                        <div>
+                          <p className="font-medium">{item.title}</p>
+                          <p className="text-sm text-gray-500">Value: {item.value}</p>
+                        </div>
+                      </div>
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex items-center gap-1"
+                        asChild
+                      >
+                        <a
+                          href={item.pdfUrl}
+                          download
+                          aria-label={`Download ${item.title}`}
+                          onClick={() => handleDownload(item.pdfUrl, item.title)}
+                        >
+                          <Download className="h-4 w-4" />
+                          <span>Download</span>
+                        </a>
+                      </Button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-blue-800 mb-4">DVV Overview</h3>
+                <p className="text-gray-700 mb-4">
+                  The DVV process ensures the accuracy and authenticity of the data submitted to NAAC. It involves verifying institutional data against supporting documents to maintain transparency and credibility.
+                </p>
+                <div className="space-y-4">
+                  <div className="bg-white p-4 rounded-lg shadow-sm">
+                    <h4 className="font-medium text-blue-700">Data Submission</h4>
+                    <p className="text-gray-600 text-sm mt-1">Institutions submit quantitative and qualitative data for NAAC evaluation.</p>
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded-lg shadow-sm">
+                    <h4 className="font-medium text-blue-700">Document Verification</h4>
+                    <p className="text-gray-600 text-sm mt-1">NAAC verifies submitted data with supporting documents like financial records and academic reports.</p>
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded-lg shadow-sm">
+                    <h4 className="font-medium text-blue-700">Clarifications</h4>
+                    <p className="text-gray-600 text-sm mt-1">Institutions provide clarifications for any discrepancies found during the DVV process.</p>
                   </div>
                 </div>
               </div>

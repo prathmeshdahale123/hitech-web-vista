@@ -112,7 +112,7 @@ That is, we have to produce engineers who can worl efficiently across the globe,
             </div>
             <div className="bg-white rounded-lg shadow-lg p-8 text-center">
               <Award className="w-12 h-12 text-blue-900 mx-auto mb-4" />
-              <div className="text-3xl font-bold text-blue-900 mb-2">95%</div>
+              <div className="text-3xl font-bold text-blue-900 mb-2">80%</div>
               <div className="text-gray-600">Placement Rate</div>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-8 text-center">

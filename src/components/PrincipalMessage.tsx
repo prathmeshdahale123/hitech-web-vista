@@ -1,25 +1,29 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // Add this import
-import { User, Calendar, FileText, Users, Award } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
 const PrincipalMessage = () => {
-  const [activeTab, setActiveTab] = useState("principal");
   const [isHovered, setIsHovered] = useState(false);
 
-  const news = [
-    { title: "Admission Open 2024-25", date: "Dec 15, 2024", type: "admission", link: "/admissions" },
-    { title: "Faculty Meeting Scheduled", date: "Dec 18, 2024", type: "meeting", link: "/events/faculty-meeting" },
-    { title: "Fee Payment Notice", date: "Dec 20, 2024", type: "fee", link: "/notices/fee-payment" },
-    { title: "Merit List Published", date: "Dec 22, 2024", type: "result", link: "/results/merit-list" },
-    { title: "Workshop on AI & ML", date: "Dec 25, 2024", type: "event", link: "/events/ai-ml-workshop" }
-  ];
+  const {
+    data: notices = [],
+    isLoading,
+    isError,
+  } = useQuery({
+    queryKey: ['notices'],
+    queryFn: async () => {
+      const res = await axios.get("https://hi-tech-backend-626g.onrender.com/api/notices", {
+        withCredentials: true,
+      });
 
-  const tabs = [
-    { id: "principal", label: "Principal's Message", icon: User },
-    { id: "secretary", label: "Secretary's Desk", icon: Users },
-    { id: "vision", label: "Vision", icon: Award },
-    { id: "mission", label: "Mission", icon: FileText }
-  ];
+      // Ensure valid structure
+      if (res.data?.data?.notices && Array.isArray(res.data.data.notices)) {
+        return res.data.data.notices;
+      }
+      return [];
+    },
+  });
 
   const content = {
     principal: {
@@ -44,12 +48,10 @@ const PrincipalMessage = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-3 gap-12">
+
           {/* Left Column - About Section */}
           <div>
-            <h2 className="text-2xl font-bold mb-2 text-blue-900">
-              About 
-              {/* <span className="bg-blue-900 text-white px-2">HIT</span> */}
-            </h2>
+            <h2 className="text-2xl font-bold mb-2 text-blue-900">About</h2>
             <div className="w-10 h-1 bg-yellow-400 mb-4" />
             <p className="text-gray-700 leading-relaxed mb-4">{content.principal.text}</p>
             <Link to="/About" className="mt-4 px-6 py-2 border border-blue-900 text-blue-900 rounded-full hover:bg-yellow-400 hover:text-white transition-colors">
@@ -75,43 +77,59 @@ const PrincipalMessage = () => {
           <div>
             <h2 className="text-2xl font-bold mb-2 text-blue-900">Notice Board</h2>
             <div className="w-10 h-1 bg-yellow-400 mb-6" />
-            <div
-              className="h-64 overflow-hidden relative"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
+
+            {isLoading ? (
+              <p>Loading notices...</p>
+            ) : isError ? (
+              <p className="text-red-500">Failed to load notices. Please try again later.</p>
+            ) : (
               <div
-                className="animate-marquee flex flex-col gap-4"
-                style={{ animationPlayState: isHovered ? "paused" : "running" }}
+                className="h-64 overflow-hidden relative"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
               >
-                {[...news, ...news].map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex gap-4 items-start border border-blue-900 p-4 bg-blue-50 rounded"
-                  >
-                    <div className="bg-yellow-400 text-blue-900 px-4 py-2 text-center rounded">
-                      <div className="text-sm font-bold uppercase">{item.date.split(" ")[0]}</div>
-                      <div className="text-xs uppercase">{item.date.split(" ")[1]}</div>
+                <div
+                  className="animate-marquee flex flex-col gap-4"
+                  style={{ animationPlayState: isHovered ? "paused" : "running" }}
+                >
+                  {[...notices, ...notices].map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col gap-2 border border-blue-900 p-4 bg-blue-50 rounded"
+                    >
+                      <div className="flex gap-4 items-start">
+                        <div className="bg-yellow-400 text-blue-900 px-4 py-2 text-center rounded">
+                          <div className="text-sm font-bold uppercase">
+                            {item.date?.split("T")[0] || "N/A"}
+                          </div>
+                        </div>
+                        <div className="text-sm text-blue-900">
+                          <span className="font-semibold">{item.title}</span>
+                          <p className="text-xs text-gray-500 mt-1">{item.description || "No description."}</p>
+                        </div>
+                      </div>
+
+                      {item.attachment?.url && (
+                        <a
+                          href={item.attachment.url}
+                          download={item.attachment.originalName || "notice-file"}
+                          className="self-start mt-2 px-3 py-1 bg-blue-900 text-white text-xs rounded hover:bg-blue-700 transition"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Download Attachment
+                        </a>
+                      )}
                     </div>
-                    <div className="text-sm text-blue-900">
-                      <Link
-                        to={item.link}
-                        className="font-semibold hover:text-yellow-600 cursor-pointer transition-colors"
-                      >
-                        {item.title}
-                      </Link>
-                      <p className="text-xs text-gray-500 mt-1">{item.date}</p>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-            {/* <button className="w-full mt-4 text-blue-900 font-medium hover:text-yellow-500 transition-colors">
-              View All News →
-            </button> */}
+            )}
           </div>
         </div>
       </div>
+
+      {/* Marquee Animation Style */}
       <style>{`
         @keyframes marquee {
           0% { transform: translateY(0%); }

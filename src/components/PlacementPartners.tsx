@@ -5,14 +5,18 @@ const PlacementPartners = () => {
 
   // Placeholder company logos (using text for demo)
   const partners = [
-    {
-      name: "Persistent Systems",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/06/Persistent_Systems_Logo.svg",
-    },
-    {
-      name: "Quick Heal",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Quick-Heal-Logo.png/250px-Quick-Heal-Logo.png",
-    },
+      {
+        name: "Tudip learning",
+        logo: "https://tudiplearning.com/wp-content/uploads/2024/07/Tudip_Learning_Logo.webp",
+      },
+      {
+        name: "Persistent Systems",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/0/06/Persistent_Systems_Logo.svg",
+      },
+      {
+        name: "Quick Heal",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Quick-Heal-Logo.png/250px-Quick-Heal-Logo.png",
+      },
     {
       name: "Bentley Systems",
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bentley_Systems_wordmark.svg/250px-Bentley_Systems_wordmark.svg.png",

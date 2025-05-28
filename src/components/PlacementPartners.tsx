@@ -95,19 +95,19 @@ const PlacementPartners = () => {
         {/* Placement Statistics */}
         <div className="grid md:grid-cols-4 gap-6 mt-12">
           <div className="text-center bg-white rounded-lg p-6 shadow-md">
-            <div className="text-3xl font-bold text-blue-900 mb-2">95%</div>
+            <div className="text-3xl font-bold text-blue-900 mb-2">80%</div>
             <div className="text-gray-600">Placement Rate</div>
           </div>
           <div className="text-center bg-white rounded-lg p-6 shadow-md">
-            <div className="text-3xl font-bold text-blue-900 mb-2">120+</div>
+            <div className="text-3xl font-bold text-blue-900 mb-2">20+</div>
             <div className="text-gray-600">Companies</div>
           </div>
           <div className="text-center bg-white rounded-lg p-6 shadow-md">
-            <div className="text-3xl font-bold text-blue-900 mb-2">₹8.5L</div>
+            <div className="text-3xl font-bold text-blue-900 mb-2">₹8 LPA</div>
             <div className="text-gray-600">Highest Package</div>
           </div>
           <div className="text-center bg-white rounded-lg p-6 shadow-md">
-            <div className="text-3xl font-bold text-blue-900 mb-2">₹4.2L</div>
+            <div className="text-3xl font-bold text-blue-900 mb-2">₹4.2 LPA</div>
             <div className="text-gray-600">Average Package</div>
           </div>
         </div>

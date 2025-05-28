@@ -147,17 +147,17 @@ const Placement = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
               <div className="bg-blue-50 p-4 rounded-lg text-center">
                 <Briefcase className="h-6 sm:h-8 w-6 sm:w-8 text-blue-700 mx-auto mb-2" />
-                <p className="font-semibold text-blue-900 text-base sm:text-lg">85%+</p>
+                <p className="font-semibold text-blue-900 text-base sm:text-lg">%80+</p>
                 <p className="text-xs sm:text-sm text-gray-600">Placement Rate</p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg text-center">
                 <Building className="h-6 sm:h-8 w-6 sm:w-8 text-blue-700 mx-auto mb-2" />
-                <p className="font-semibold text-blue-900 text-base sm:text-lg">100+</p>
+                <p className="font-semibold text-blue-900 text-base sm:text-lg">20+</p>
                 <p className="text-xs sm:text-sm text-gray-600">Recruiting Companies</p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg text-center">
                 <BarChart className="h-6 sm:h-8 w-6 sm:w-8 text-blue-700 mx-auto mb-2" />
-                <p className="font-semibold text-blue-900 text-base sm:text-lg">24 LPA</p>
+                <p className="font-semibold text-blue-900 text-base sm:text-lg">8 LPA</p>
                 <p className="text-xs sm:text-sm text-gray-600">Highest Package</p>
               </div>
             </div>

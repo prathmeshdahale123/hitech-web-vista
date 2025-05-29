@@ -25,16 +25,18 @@ const Downloads = () => {
     { id: 7, name: "Transport Request Form", size: "540 KB", type: "PDF", lastUpdated: "May 8, 2023", downloadUrl: "/downloads/transport-request-form.pdf" },
   ];
 
+  // 
+  // Academic Calender ODD Semister (2022-23)
+  // 
+  //  
+  // 
   const academicDocs = [
-    { id: 1, name: "Academic Calendar 2023-24", size: "1.6 MB", type: "PDF", lastUpdated: "June 5, 2023", downloadUrl: "/downloads/academic-calendar-2023-24.pdf" },
-    { id: 2, name: "Examination Schedule - Odd Semester", size: "820 KB", type: "PDF", lastUpdated: "September 10, 2023", downloadUrl: "/downloads/exam-schedule-odd-sem.pdf" },
-    { id: 3, name: "Syllabus - Computer Engineering", size: "3.2 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-computer-engg.pdf" },
-    { id: 4, name: "Syllabus - Civil Engineering", size: "2.8 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-civil-engg.pdf" },
-    { id: 5, name: "Syllabus - Mechanical Engineering", size: "3.1 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-mech-engg.pdf" },
-    { id: 6, name: "Syllabus - AI & ML", size: "2.5 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-ai-ml.pdf" },
-    { id: 7, name: "Laboratory Manual - Basic Engineering", size: "4.2 MB", type: "PDF", lastUpdated: "August 2, 2023", downloadUrl: "/downloads/lab-manual-basic-engg.pdf" },
-    { id: 8, name: "Student Attendance Format", size: "620 KB", type: "XLSX", lastUpdated: "July 20, 2023", downloadUrl: "/downloads/student-attendance-format.xlsx" },
-  ];
+    { id: 1, name: " Academic Calender EVEN Semester ", size: "1.6 MB", type: "PDF", lastUpdated: "(2022-23)", downloadUrl: "public/Academic-Calender-pdf/ACAD CALENDAR 2022-23 SEM-II Even Sem.pdf" },
+    { id: 2, name: "Academic Calender ODD Semester ", size: "820 KB", type: "PDF", lastUpdated: "(2022-23)", downloadUrl: "public/Academic-Calender-pdf/ACADEMIC CALENDAR 22-23 ODD SEM.pdf" },
+    { id: 3, name: "Academic Calender Semister ", size: "3.2 MB", type: "PDF", lastUpdated: "(2019-20)", downloadUrl: "public/Academic-Calender-pdf/AC_BAMU_2019_20_odd_sem-4.pdf" },
+    { id: 4, name: "Academic Calender Semister ", size: "2.8 MB", type: "PDF", lastUpdated: "(2018-19)", downloadUrl: "public/Academic-Calender-pdf/2018-19_ACDEMIC_CALENDER.pdf" },
+    { id: 5, name: "Academic Calender Semister ", size: "3.1 MB", type: "PDF", lastUpdated: "(2017-18)", downloadUrl: "public/Academic-Calender-pdf/2017-18_ACADEMIC_CALENDER.pdf" },
+ ];
 
   const scholarshipDocs = [
     { id: 1, name: "Government Scholarship Form", size: "1.1 MB", type: "PDF", lastUpdated: "July 10, 2023", downloadUrl: "/downloads/govt-scholarship-form.pdf" },

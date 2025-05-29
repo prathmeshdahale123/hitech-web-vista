@@ -3,11 +3,10 @@ import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-blue-900 text-white">
-      <div className="container mx-auto px-4 py-6 md:py-12">
+      <div className="container mx-auto px-4 py-4 md:py-6">
         <div className="grid md:grid-cols-4 gap-4 md:gap-8">
-          {/* About Section */}
           <div className="col-span-2">
-            <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+            <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3">
               <img 
                 src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png" 
                 alt="Hi-Tech Institute Logo" 
@@ -18,7 +17,7 @@ const Footer = () => {
                 <p className="text-blue-200 text-xs md:text-sm">Since 2001</p>
               </div>
             </div>
-            <p className="text-blue-200 text-sm md:text-base mb-3 md:mb-4">
+            <p className="text-blue-200 text-sm md:text-base mb-2 md:mb-3">
               A Pioneer to shape global Technocrats. Approved by AICTE, DTE Govt. of Maharashtra & 
               Affiliated to Dr. Babasaheb Ambedkar Technological University, Lonere, Raigad.
             </p>
@@ -29,9 +28,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4">Quick Links</h4>
+            <h4 className="text-base md:text-lg font-semibold mb-2 md:mb-3">Quick Links</h4>
             <ul className="space-y-1 md:space-y-2 text-blue-200 text-sm md:text-base">
               <li><a href="https://www.aicte-india.org/" className="hover:text-yellow-400 transition-colors">AICTE</a></li>
               <li><a href="https://dte.maharashtra.gov.in/" className="hover:text-yellow-400 transition-colors">DTE</a></li>
@@ -43,10 +41,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4">Contact Info</h4>
-            <div className="space-y-2 md:space-y-3 text-blue-200">
+            <h4 className="text-base md:text-lg font-semibold mb-2 md:mb-3">Contact Info</h4>
+            <div className="space-y-1 md:space-y-2 text-blue-200">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 md:w-5 md:h-5 mt-0.5 md:mt-1 flex-shrink-0" />
                 <span className="text-xs md:text-sm">
@@ -66,9 +63,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-blue-800 mt-4 md:mt-8 pt-4 md:pt-8 text-center text-blue-200">
+        <div className="border-t border-blue-800 mt-3 md:mt-6 pt-3 md:pt-6 text-center text-blue-200">
           <p className="text-sm md:text-base">© 2024 Hi-Tech Institute of Technology. All rights reserved.</p>
-          <p className="text-xs md:text-sm mt-1 md:mt-2">
+          <p className="text-xs md:text-sm mt-1">
             Affiliated to: AICTE | DTE | BAMU | BATU
           </p>
         </div>

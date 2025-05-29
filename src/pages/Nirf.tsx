@@ -156,39 +156,7 @@ const Nirf = () => {
         View PDF
       </a>
     </div>
-    <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-      <span className="font-medium">NIRF 2022</span>
-      <a
-        href="/pdfs/nirf-2022.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
-      >
-        View PDF
-      </a>
-    </div>
-    <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-      <span className="font-medium">NIRF 2021</span>
-      <a
-        href="/pdfs/nirf-2021.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
-      >
-        View PDF
-      </a>
-    </div>
-    <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-      <span className="font-medium">NIRF 2020</span>
-      <a
-        href="/pdfs/nirf-2020.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
-      >
-        View PDF
-      </a>
-    </div>
+    
   </div>
 </div>
             
@@ -220,14 +188,7 @@ const Nirf = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm">
-                  <GraduationCap className="h-5 w-5 text-blue-700 mt-1" />
-                  {/* <div>
-                    <p className="font-medium">Engineering Institutions Ranking</p>
-                    <p className="text-sm text-gray-600">Check the complete list of engineering institutions ranking.</p>
-                    <Button variant="link" className="p-0 h-auto text-blue-700 mt-1">View Rankings</Button>
-                  </div> */}
-                </div>
+                
               </div>
             </div>
           </div>

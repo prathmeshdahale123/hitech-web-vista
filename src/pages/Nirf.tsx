@@ -94,21 +94,21 @@ const Nirf = () => {
       />
       
       <div className="container mx-auto px-4 py-12 flex-grow">
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-1 gap-8 mb-12">
           <div className="col-span-2">
             <h2 className="text-2xl font-bold text-blue-900 mb-4">About NIRF</h2>
             <p className="text-gray-700 mb-4">
               The National Institutional Ranking Framework (NIRF) is a methodology adopted by the Ministry of Education, Government of India, to rank institutions of higher education in India. The framework was approved by the MHRD and launched in 2015.
-            </p>
-            <p className="text-gray-700 mb-4">
+            {/* </p>
+            <p className="text-gray-700 mb-4"> */}
               NIRF outlines a methodology to rank institutions across the country based on parameters such as Teaching, Learning and Resources, Research and Professional Practices, Graduation Outcomes, Outreach and Inclusivity, and Perception.
-            </p>
-            <p className="text-gray-700">
+            {/* </p>
+            <p className="text-gray-700"> */}
               Hi-Tech Institute of Technology actively participates in the NIRF ranking process as part of our commitment to transparency and continuous quality improvement. Our participation helps us benchmark our performance against other institutions and identify areas for improvement.
             </p>
           </div>
           
-          <div className="bg-blue-50 p-6 rounded-lg">
+          {/* <div className="bg-blue-50 p-6 rounded-lg">
             <div className="text-center">
               <Award className="h-16 w-16 text-blue-700 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-blue-800 mb-2">NIRF Ranking</h3>
@@ -132,7 +132,7 @@ const Nirf = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         
         <Tabs defaultValue="parameters">
@@ -389,7 +389,14 @@ const Nirf = () => {
                   <div>
                     <p className="font-medium">NIRF Official Website</p>
                     <p className="text-sm text-gray-600">Visit the official NIRF website for complete ranking information.</p>
-                    <Button variant="link" className="p-0 h-auto text-blue-700 mt-1">Visit Website</Button>
+                    <a
+                      href="https://www.nirfindia.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-0 h-auto text-blue-700 mt-1 underline font-medium"
+                    >
+                      Visit Website
+                    </a>
                   </div>
                 </div>
                 
@@ -404,11 +411,11 @@ const Nirf = () => {
                 
                 <div className="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm">
                   <GraduationCap className="h-5 w-5 text-blue-700 mt-1" />
-                  <div>
+                  {/* <div>
                     <p className="font-medium">Engineering Institutions Ranking</p>
                     <p className="text-sm text-gray-600">Check the complete list of engineering institutions ranking.</p>
                     <Button variant="link" className="p-0 h-auto text-blue-700 mt-1">View Rankings</Button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

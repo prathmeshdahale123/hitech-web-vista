@@ -56,13 +56,13 @@ const Downloads = () => {
     { id: 7, name: "Alumni Registration Form", size: "850 KB", type: "PDF", lastUpdated: "June 15, 2023", downloadUrl: "/downloads/alumni-registration-form.pdf" },
   ];
 
-  const naacDocs = [
-    { id: 1, name: "Self Study Report (SSR) 2022", size: "15.8 MB", type: "PDF", lastUpdated: "December 10, 2022", downloadUrl: "/downloads/naac-ssr-2022.pdf" },
-    { id: 2, name: "Annual Quality Assurance Report 2022-23", size: "8.2 MB", type: "PDF", lastUpdated: "June 30, 2023", downloadUrl: "/downloads/naac-aqar-2022-23.pdf" },
-    { id: 3, name: "NAAC Metrics Documentation", size: "12.5 MB", type: "PDF", lastUpdated: "January 15, 2023", downloadUrl: "/downloads/naac-metrics-documentation.pdf" },
-    { id: 4, name: "Best Practices Documentation", size: "3.8 MB", type: "PDF", lastUpdated: "February 10, 2023", downloadUrl: "/downloads/best-practices-documentation.pdf" },
-    { id: 5, name: "Student Satisfaction Survey Report", size: "5.2 MB", type: "PDF", lastUpdated: "March 25, 2023", downloadUrl: "/downloads/student-satisfaction-survey.pdf" },
-  ];
+  // const naacDocs = [
+  //   { id: 1, name: "Self Study Report (SSR) 2022", size: "15.8 MB", type: "PDF", lastUpdated: "December 10, 2022", downloadUrl: "/downloads/naac-ssr-2022.pdf" },
+  //   { id: 2, name: "Annual Quality Assurance Report 2022-23", size: "8.2 MB", type: "PDF", lastUpdated: "June 30, 2023", downloadUrl: "/downloads/naac-aqar-2022-23.pdf" },
+  //   { id: 3, name: "NAAC Metrics Documentation", size: "12.5 MB", type: "PDF", lastUpdated: "January 15, 2023", downloadUrl: "/downloads/naac-metrics-documentation.pdf" },
+  //   { id: 4, name: "Best Practices Documentation", size: "3.8 MB", type: "PDF", lastUpdated: "February 10, 2023", downloadUrl: "/downloads/best-practices-documentation.pdf" },
+  //   { id: 5, name: "Student Satisfaction Survey Report", size: "5.2 MB", type: "PDF", lastUpdated: "March 25, 2023", downloadUrl: "/downloads/student-satisfaction-survey.pdf" },
+  // ];
 
   // Function to render document table
   const renderDocumentTable = (documents: typeof admissionDocs) => (
@@ -130,9 +130,9 @@ const Downloads = () => {
           <TabsList className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5 w-full overflow-x-auto">
             <TabsTrigger value="admission" className="text-xs sm:text-sm">Admission</TabsTrigger>
             <TabsTrigger value="academic" className="text-xs sm:text-sm">Academic</TabsTrigger>
-            <TabsTrigger value="scholarship" className="text-xs sm:text-sm">Scholarship</TabsTrigger>
-            <TabsTrigger value="forms" className="text-xs sm:text-sm">Forms</TabsTrigger>
-            <TabsTrigger value="naac" className="text-xs sm:text-sm">NAAC & NIRF</TabsTrigger>
+             <TabsTrigger value="scholarship" className="text-xs sm:text-sm">Scholarship</TabsTrigger>
+            {/* <TabsTrigger value="forms" className="text-xs sm:text-sm">Forms</TabsTrigger> */}
+            {/* <TabsTrigger value="naac" className="text-xs sm:text-sm">NAAC & NIRF</TabsTrigger> */}
           </TabsList>
 
           <TabsContent value="admission" className="mt-4 sm:mt-6">
@@ -167,13 +167,13 @@ const Downloads = () => {
             {renderDocumentTable(formsDocs)}
           </TabsContent>
 
-          <TabsContent value="naac" className="mt-4 sm:mt-6">
+          {/* <TabsContent value="naac" className="mt-4 sm:mt-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg sm:text-xl font-semibold text-blue-800">NAAC & NIRF Documents</h3>
               <p className="text-xs sm:text-sm text-gray-500">{naacDocs.length} documents available</p>
             </div>
             {renderDocumentTable(naacDocs)}
-          </TabsContent>
+          </TabsContent> */}
         </Tabs>
 
         <div className="mt-8 sm:mt-12 bg-blue-50 p-4 sm:p-6 rounded-lg">

@@ -192,7 +192,7 @@ const Nirf = () => {
                       className="p-0 h-auto text-blue-700 mt-1 underline font-medium"
                     >
                       Learn More
-                    </a>
+                    </a>i
                   </div>
                   </div>
                 </div>

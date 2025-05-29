@@ -360,26 +360,54 @@ const Nirf = () => {
         <div className="mt-12 bg-blue-50 p-6 rounded-lg">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-blue-800 mb-4">NIRF Rankings Over the Years</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-                  <span className="font-medium">NIRF 2023</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">Rank 178</span>
-                </div>
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-                  <span className="font-medium">NIRF 2022</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">Rank 185</span>
-                </div>
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-                  <span className="font-medium">NIRF 2021</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">Rank 196</span>
-                </div>
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-                  <span className="font-medium">NIRF 2020</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">Band 201-250</span>
-                </div>
-              </div>
-            </div>
+  <h3 className="text-xl font-semibold text-blue-800 mb-4">NIRF</h3>
+  <div className="space-y-4">
+    <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
+      <span className="font-medium">NIRF 2023</span>
+      <a
+        href="/pdfs/nirf-2023.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
+      >
+        View PDF
+      </a>
+    </div>
+    <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
+      <span className="font-medium">NIRF 2022</span>
+      <a
+        href="/pdfs/nirf-2022.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
+      >
+        View PDF
+      </a>
+    </div>
+    <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
+      <span className="font-medium">NIRF 2021</span>
+      <a
+        href="/pdfs/nirf-2021.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
+      >
+        View PDF
+      </a>
+    </div>
+    <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
+      <span className="font-medium">NIRF 2020</span>
+      <a
+        href="/pdfs/nirf-2020.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
+      >
+        View PDF
+      </a>
+    </div>
+  </div>
+</div>
             
             <div>
               <h3 className="text-xl font-semibold text-blue-800 mb-4">Official NIRF Resources</h3>

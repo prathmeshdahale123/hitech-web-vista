@@ -136,11 +136,11 @@ const Nirf = () => {
         </div>
         
         <Tabs defaultValue="parameters">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3">
+          {/* <TabsList className="grid w-full grid-cols-2 md:grid-cols-3">
             <TabsTrigger value="parameters">Ranking Parameters</TabsTrigger>
             <TabsTrigger value="stats">Institute Statistics</TabsTrigger>
             <TabsTrigger value="documents">NIRF Documents</TabsTrigger>
-          </TabsList>
+          </TabsList> */}
           
           <TabsContent value="parameters" className="mt-6">
             <h3 className="text-xl font-semibold text-blue-800 mb-4">NIRF Ranking Parameters</h3>
@@ -165,7 +165,7 @@ const Nirf = () => {
             </div>
           </TabsContent>
           
-          <TabsContent value="stats" className="mt-6">
+          {/* <TabsContent value="stats" className="mt-6">
             <h3 className="text-xl font-semibold text-blue-800 mb-4">Institute Statistics for NIRF 2023</h3>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -226,9 +226,9 @@ const Nirf = () => {
               </Card>
             </div>
             
-            <div className="space-y-8">
+            <div className="space-y-8"> */}
               {/* These would be actual charts in a real implementation */}
-              <div>
+              {/* <div>
                 <h4 className="font-medium text-blue-800 mb-3">Faculty-Student Ratio</h4>
                 <div className="bg-gray-100 rounded-lg p-8 flex items-center justify-center">
                   <p className="text-gray-500">[Faculty-Student Ratio Chart]</p>
@@ -354,7 +354,7 @@ const Nirf = () => {
                 </div>
               </div>
             </div>
-          </TabsContent>
+          </TabsContent> */}
         </Tabs>
         
         <div className="mt-12 bg-blue-50 p-6 rounded-lg">

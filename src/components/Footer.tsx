@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col-span-2">
             <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3">
               <img 
-                src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png" 
+                src="/Img-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png" 
                 alt="Hi-Tech Institute Logo" 
                 className="w-10 h-10 md:w-12 md:h-12"
               />

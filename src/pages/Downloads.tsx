@@ -32,12 +32,25 @@ const Downloads = () => {
     { id: 5, name: "Academic Calender Semister", size: "3.1 MB", type: "PDF", lastUpdated: "(2017-18)", downloadUrl: "public/Academic-Calender-pdf/2017-18_ACADEMIC_CALENDER.pdf" },
   ];
 
+
   const scholarshipDocs = [
-    { id: 1, name: "Government Scholarship Form", size: "1.1 MB", type: "PDF", lastUpdated: "July 10, 2023", downloadUrl: "/downloads/govt-scholarship-form.pdf" },
-    { id: 2, name: "Scholarship Schemes Information", size: "1.8 MB", type: "PDF", lastUpdated: "July 5, 2023", downloadUrl: "/downloads/scholarship-schemes-info.pdf" },
-    { id: 3, name: "Merit Scholarship Application", size: "950 KB", type: "PDF", lastUpdated: "July 12, 2023", downloadUrl: "/downloads/merit-scholarship-application.pdf" },
-    { id: 4, name: "SC/ST Scholarship Guidelines", size: "1.3 MB", type: "PDF", lastUpdated: "July 8, 2023", downloadUrl: "/downloads/scst-scholarship-guidelines.pdf" },
-    { id: 5, name: "EBC Scholarship Form", size: "980 KB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/ebc-scholarship-form.pdf" },
+    { id: 1, name: "Government Scholarship Form", size: "250 KB", type: "PDF", lastUpdated: "July 10, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 2, name: "Aadhaar Card (Linked with bank account)", size: "250 KB", type: "PDF", lastUpdated: "July 5, 2023", downloadUrl: "/downloads/scholarship-schemes-info.pdf" },
+    { id: 3, name: "Recent Passport Size Photograph", size: "250 KB", type: "PDF", lastUpdated: "July 12, 2023", downloadUrl: "/downloads/merit-scholarship-application.pdf" },
+    { id: 4, name: "Domicile Certificate of Maharashtra", size: "250 KB", type: "PDF", lastUpdated: "July 8, 2023", downloadUrl: "/downloads/scst-scholarship-guidelines.pdf" },
+    { id: 5, name: "Previous Year Marksheet (HSC/12th Marksheet if first year)", size: "250 KB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/ebc-scholarship-form.pdf" },
+    { id: 6, name: "Current Year Bonafide Certificate from college", size: "250 KB", type: "PDF", lastUpdated: "July 20, 2023", downloadUrl: "/downloads/scholarship-eligibility-criteria.pdf" },
+    { id: 7, name: "Caste Certificate (if applying under SC/ST/OBC/VJNT/SBC)", size: "250 KB", type: "PDF", lastUpdated: "July 25, 2023", downloadUrl: "/downloads/scholarship-application-form.pdf" },
+    { id: 8, name: "Caste Validity Certificate (Mandatory for SC/ST/VJNT/SBC students)", size: "250 KB", type: "PDF", lastUpdated: "July 30, 2023", downloadUrl: "/downloads/scholarship-terms-conditions.pdf" },
+    { id: 9, name: "Income Certificate (issued by Tehsildar; not older than 1 year)", size: "250 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/scholarship-faqs.pdf" },
+    { id: 10, name: "Ration Card (for address/family details proof)", size: "250 KB", type: "PDF", lastUpdated: "August 10, 2023", downloadUrl: "/downloads/scholarship-contact-info.pdf" },
+    { id: 11, name: "Bank Passbook (scanned copy of first page – student’s name, IFSC, account number must be visible)", size: "250 KB", type: "PDF", lastUpdated: "August 15, 2023", downloadUrl: "/downloads/scholarship-application-checklist.pdf" },
+    { id: 12, name: "Gap Certificate (if there is a gap in education)", size: "250 KB", type: "PDF", lastUpdated: "August 20, 2023", downloadUrl: "/downloads/scholarship-application-form.pdf" },
+    { id: 13, name: "Non-Creamy Layer Certificate (for OBC/VJNT/SBC categories – valid for 3 years)", size: "250 KB", type: "PDF", lastUpdated: "August 25, 2023", downloadUrl: "/downloads/non-creamy-layer-certificate.pdf" },
+    { id: 14, name: "Leaving Certificate (LC) (optional but often asked)", size: "250 KB", type: "PDF", lastUpdated: "August 30, 2023", downloadUrl: "/downloads/leaving-certificate.pdf" },
+    { id: 15, name: "Hostel Certificate (if staying in a hostel and applying for related benefits)", size: "250 KB", type: "PDF", lastUpdated: "September 5, 2023", downloadUrl: "/downloads/hostel-certificate.pdf" },
+    { id: 16, name: "Self Declaration (some schemes require it)", size: "250 KB", type: "PDF", lastUpdated: "September 10, 2023", downloadUrl: "/downloads/self-declaration.pdf" },
+
   ];
 
 

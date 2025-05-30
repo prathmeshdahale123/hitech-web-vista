@@ -126,7 +126,7 @@ const Contact = () => {
                       <h3 className="font-semibold text-gray-800">Address</h3>
                       <p className="text-gray-600">
                         Hi-Tech Institute of Technology<br />
-                        Waluj MIDC, Aurangabad<br />
+                        Waluj MIDC, Chh. Sambhajinagar<br />
                         Maharashtra, India - 431136
                       </p>
                     </div>

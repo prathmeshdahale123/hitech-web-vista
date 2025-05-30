@@ -35,31 +35,32 @@ const Downloads = () => {
 
   const scholarshipDocs = [
     { id: 1, name: "Government Scholarship Form", size: "250 KB", type: "PDF", lastUpdated: "July 10, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
-    { id: 2, name: "Aadhaar Card (Linked with bank account)", size: "250 KB", type: "PDF", lastUpdated: "July 5, 2023", downloadUrl: "/downloads/scholarship-schemes-info.pdf" },
-    { id: 3, name: "Recent Passport Size Photograph", size: "250 KB", type: "PDF", lastUpdated: "July 12, 2023", downloadUrl: "/downloads/merit-scholarship-application.pdf" },
-    { id: 4, name: "Domicile Certificate of Maharashtra", size: "250 KB", type: "PDF", lastUpdated: "July 8, 2023", downloadUrl: "/downloads/scst-scholarship-guidelines.pdf" },
-    { id: 5, name: "Previous Year Marksheet (HSC/12th Marksheet if first year)", size: "250 KB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/ebc-scholarship-form.pdf" },
-    { id: 6, name: "Current Year Bonafide Certificate from college", size: "250 KB", type: "PDF", lastUpdated: "July 20, 2023", downloadUrl: "/downloads/scholarship-eligibility-criteria.pdf" },
-    { id: 7, name: "Caste Certificate (if applying under SC/ST/OBC/VJNT/SBC)", size: "250 KB", type: "PDF", lastUpdated: "July 25, 2023", downloadUrl: "/downloads/scholarship-application-form.pdf" },
-    { id: 8, name: "Caste Validity Certificate (Mandatory for SC/ST/VJNT/SBC students)", size: "250 KB", type: "PDF", lastUpdated: "July 30, 2023", downloadUrl: "/downloads/scholarship-terms-conditions.pdf" },
-    { id: 9, name: "Income Certificate (issued by Tehsildar; not older than 1 year)", size: "250 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/scholarship-faqs.pdf" },
-    { id: 10, name: "Ration Card (for address/family details proof)", size: "250 KB", type: "PDF", lastUpdated: "August 10, 2023", downloadUrl: "/downloads/scholarship-contact-info.pdf" },
-    { id: 11, name: "Bank Passbook (scanned copy of first page – student’s name, IFSC, account number must be visible)", size: "250 KB", type: "PDF", lastUpdated: "August 15, 2023", downloadUrl: "/downloads/scholarship-application-checklist.pdf" },
-    { id: 12, name: "Gap Certificate (if there is a gap in education)", size: "250 KB", type: "PDF", lastUpdated: "August 20, 2023", downloadUrl: "/downloads/scholarship-application-form.pdf" },
-    { id: 13, name: "Non-Creamy Layer Certificate (for OBC/VJNT/SBC categories – valid for 3 years)", size: "250 KB", type: "PDF", lastUpdated: "August 25, 2023", downloadUrl: "/downloads/non-creamy-layer-certificate.pdf" },
-    { id: 14, name: "Leaving Certificate (LC) (optional but often asked)", size: "250 KB", type: "PDF", lastUpdated: "August 30, 2023", downloadUrl: "/downloads/leaving-certificate.pdf" },
-    { id: 15, name: "Hostel Certificate (if staying in a hostel and applying for related benefits)", size: "250 KB", type: "PDF", lastUpdated: "September 5, 2023", downloadUrl: "/downloads/hostel-certificate.pdf" },
-    { id: 16, name: "Self Declaration (some schemes require it)", size: "250 KB", type: "PDF", lastUpdated: "September 10, 2023", downloadUrl: "/downloads/self-declaration.pdf" },
+    { id: 2, name: "Aadhaar Card (Linked with bank account)", size: "250 KB", type: "PDF", lastUpdated: "July 5, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 3, name: "Recent Passport Size Photograph", size: "250 KB", type: "PDF", lastUpdated: "July 12, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 4, name: "Domicile Certificate of Maharashtra", size: "250 KB", type: "PDF", lastUpdated: "July 8, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 5, name: "Previous Year Marksheet (HSC/12th Marksheet if first year)", size: "250 KB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 6, name: "Current Year Bonafide Certificate from college", size: "250 KB", type: "PDF", lastUpdated: "July 20, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 7, name: "Caste Certificate (if applying under SC/ST/OBC/VJNT/SBC)", size: "250 KB", type: "PDF", lastUpdated: "July 25, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 8, name: "Caste Validity Certificate (Mandatory for SC/ST/VJNT/SBC students)", size: "250 KB", type: "PDF", lastUpdated: "July 30, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 9, name: "Income Certificate (issued by Tehsildar; not older than 1 year)", size: "250 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 10, name: "Ration Card (for address/family details proof)", size: "250 KB", type: "PDF", lastUpdated: "August 10, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 11, name: "Bank Passbook (scanned copy of first page – student’s name, IFSC, account number must be visible)", size: "250 KB", type: "PDF", lastUpdated: "August 15, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf"},
+    { id: 12, name: "Gap Certificate (if there is a gap in education)", size: "250 KB", type: "PDF", lastUpdated: "August 20, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 13, name: "Non-Creamy Layer Certificate (for OBC/VJNT/SBC categories – valid for 3 years)", size: "250 KB", type: "PDF", lastUpdated: "August 25, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 14, name: "Leaving Certificate (LC) (optional but often asked)", size: "250 KB", type: "PDF", lastUpdated: "August 30, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 15, name: "Hostel Certificate (if staying in a hostel and applying for related benefits)", size: "250 KB", type: "PDF", lastUpdated: "September 5, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 16, name: "Self Declaration (some schemes require it)", size: "250 KB", type: "PDF", lastUpdated: "September 10, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
 
   ];
 
-
   const projectDocs = [
-    { id: 1, name: "Project Proposal Template", size: "1.0 MB", type: "PDF", lastUpdated: "August 1, 2023", downloadUrl: "/downloads/project-proposal-template.pdf" },
-    { id: 2, name: "Project Guidelines 2023-24", size: "1.4 MB", type: "PDF", lastUpdated: "July 20, 2023", downloadUrl: "/downloads/project-guidelines-2023-24.pdf" },
-    { id: 3, name: "Project Submission Form", size: "750 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/project-submission-form.pdf" },
-    { id: 4, name: "Project Evaluation Criteria", size: "900 KB", type: "PDF", lastUpdated: "July 25, 2023", downloadUrl: "/downloads/project-evaluation-criteria.pdf" },
-    { id: 5, name: "Sample Project Report", size: "2.5 MB", type: "PDF", lastUpdated: "June 30, 2023", downloadUrl: "/downloads/sample-project-report.pdf" },
+    { id: 1, name: "Project Report Department of Computer Science and Engineering", size: "1.0 MB", type: "PDF", lastUpdated: "2022-23", downloadUrl: "/downloads/project-proposal-template.pdf" },
+    { id: 2, name: "The members of the cell", size: "1.4 MB", type: "PDF", lastUpdated: "2020-21", downloadUrl: "/downloads/project-guidelines-2023-24.pdf" },
+    { id: 2, name: "Supreme Court Ruling", size: "1.4 MB", type: "PDF", lastUpdated: "2020-21", downloadUrl: "/downloads/project-guidelines-2023-24.pdf" },
+    { id: 3, name: "Department of Computer Science and Engineering", size: "750 KB", type: "PDF", lastUpdated: "2020-21", downloadUrl: "public/Project Lists-pdf/BE 2020-21 Project List.pdf" },
+    { id: 3, name: "Department of Computer Science and Engineering", size: "750 KB", type: "PDF", lastUpdated: "2019-20", downloadUrl: "public/Project Lists-pdf/BE CSE Project List 2019-20.pdf" },
+    { id: 4, name: "Department of Computer Science and Engineering", size: "900 KB", type: "PDF", lastUpdated: "2018-19", downloadUrl: "public/Project Lists-pdf/2018-19 Project List.pdf" },
+    { id: 5, name: "Department of Computer Science and Engineering", size: "2.5 MB", type: "PDF", lastUpdated: "2017-18", downloadUrl: "public/Project Lists-pdf/BE-CSE-Project-List.pdf" },
   ];
 
   const renderDocumentTable = (documents: typeof admissionDocs) => (

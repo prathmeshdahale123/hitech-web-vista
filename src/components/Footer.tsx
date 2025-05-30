@@ -47,7 +47,7 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 md:w-5 md:h-5 mt-0.5 md:mt-1 flex-shrink-0" />
                 <span className="text-xs md:text-sm">
-                  Waluj MIDC, Aurangabad,<br />
+                  Waluj MIDC, Chh. Sambhajinagar,<br />
                   Maharashtra, India
                 </span>
               </div>

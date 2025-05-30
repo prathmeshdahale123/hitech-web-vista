@@ -148,7 +148,7 @@ const Nirf = () => {
     <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
       <span className="font-medium">NIRF 2023</span>
       <a
-        href="/pdfs/nirf-2023.pdf"
+        href="public/other-pdf's/nirf.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
@@ -182,9 +182,18 @@ const Nirf = () => {
                 <div className="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm">
                   <FileText className="h-5 w-5 text-blue-700 mt-1" />
                   <div>
+                   <div>
                     <p className="font-medium">NIRF Parameters & Methodology</p>
                     <p className="text-sm text-gray-600">Understand the NIRF ranking methodology and parameters.</p>
-                    <Button variant="link" className="p-0 h-auto text-blue-700 mt-1">Learn More</Button>
+                    <a
+                      href="https://www.nirfindia.org/nirfpdfcdn/2024/framework/Engineering.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-0 h-auto text-blue-700 mt-1 underline font-medium"
+                    >
+                      Learn More
+                    </a>i
+                  </div>
                   </div>
                 </div>
                 

@@ -18,7 +18,7 @@ const Header = () => {
     { name: "T & P Cell", href: "/placement" },
     { name: "Downloads", href: "/downloads" },
     { name: "NIRF", href: "/nirf" },
-    { name: "Alumni", href: "/alumni" },
+    // { name: "Alumni", href: "/alumni" },
     { name: "Contact", href: "/contact" },
     { name: "Admin Login", href: "/admin/login"}
   ];
@@ -47,7 +47,7 @@ const Header = () => {
         <div className="container mx-auto px-4 pt-3 pb-2 border-b border-gray-200">
           <div className="flex gap-6 items-start">
             <img
-              src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
+              src="/Img-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
               alt="Hi-Tech Institute Logo"
               className="w-20 h-20 object-contain"
             />
@@ -93,7 +93,7 @@ const Header = () => {
         <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
           <div className="flex items-start gap-3">
             <img
-              src="/lovable-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
+              src="/Img-uploads/a8cbea0d-761e-4176-9664-da3929fe1b3c.png"
               alt="Logo"
               className="w-12 h-12 object-contain"
             />

@@ -78,7 +78,7 @@ const facilities = [
     id: "transportation",
     name: "Transportation",
     icon: <Bus className="h-12 w-12 text-blue-700" />,
-    description: "Fleet of buses covering major routes in and around Aurangabad for convenient commute of students and staff.",
+    description: "Fleet of buses covering major routes in and around Chh. Sambhajinagar for convenient commute of students and staff.",
     features: [
       "Fleet of 15+ buses covering major areas of the city",
       "Regular schedules with multiple pickup and drop points",

@@ -10,7 +10,7 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ 
   title, 
   subtitle,
-  bgImage = "/lovable-uploads/e10ad61e-b88e-4aa7-9fb0-1810d11c6e9a.png"
+  bgImage = "/Img-uploads/e10ad61e-b88e-4aa7-9fb0-1810d11c6e9a.png"
 }) => {
   return (
     <section className="relative h-[30vh] overflow-hidden">

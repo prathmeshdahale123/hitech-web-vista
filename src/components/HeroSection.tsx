@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.3)), url('/lovable-uploads/e10ad61e-b88e-4aa7-9fb0-1810d11c6e9a.png')`
+          backgroundImage: `linear-gradient(to right, rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.3)), url('/Img-uploads/e10ad61e-b88e-4aa7-9fb0-1810d11c6e9a.png')`
         }}
       />
       <div className="relative z-10 container mx-auto px-4 h-full flex items-center">

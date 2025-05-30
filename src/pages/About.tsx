@@ -8,10 +8,10 @@ const About = () => {
   const [showFullSecretary, setShowFullSecretary] = useState(false);
 
   const principalMessage = `
-    Dear Student,It gives me great pleasure in welcoming you to Hi-Tech Institute of Technology (HIT), Aurangabad—an established and leading engineering institute from the Marathwada region of Maharashtra State, India. Currently, the institute offers B.E. degree programs of the Dr. Babasaheb Ambedkar Marathwada University, Aurangabad, in four disciplines: Civil, Computer Science & Engineering, Mechanical.
+    Dear Student,It gives me great pleasure in welcoming you to Hi-Tech Institute of Technology (HIT), Chh. Sambhajinagar—an established and leading engineering institute from the Marathwada region of Maharashtra State, India. Currently, the institute offers B.E. degree programs of the Dr. Babasaheb Ambedkar Marathwada University, Chh. Sambhajinagar, in four disciplines: Civil, Computer Science & Engineering, Mechanical.
 HIT has a large and quiet campus with a well-maintained infrastructure, including laboratory equipment that is one of the best among the private engineering colleges in this region.
 Our institute has had a glorious past record of academic achievements. Our students have regularly appeared within the top 10 ranks in the university, with a few also achieving the very first rank.
-HIT enjoys a distinct advantage of being located in the close vicinity of Aurangabad’s premier industrial estate, with renowned names like Bajaj Auto being our next-door neighbours. We have been maintaining close ties with all the local industries by calling them over to our campus for conducting workshops / seminars / symposia / conferences of interest to them. This activity not only enhances the practical professional knowledge of our students, it also helps them gain confidence about earning their place in the professional world once they graduate from our institute.
+HIT enjoys a distinct advantage of being located in the close vicinity of Chh. Sambhajinagar’s premier industrial estate, with renowned names like Bajaj Auto being our next-door neighbours. We have been maintaining close ties with all the local industries by calling them over to our campus for conducting workshops / seminars / symposia / conferences of interest to them. This activity not only enhances the practical professional knowledge of our students, it also helps them gain confidence about earning their place in the professional world once they graduate from our institute.
 Our institute has a disciplined team of well-qualified, experienced and dynamic staff members who maintain close relations with our students and also with their parents/guardians.
 Over the years, this institute has produced thousands of engineers who have established themselves in various spheres: industry, business, government organizations, national laboratory, and even in careers abroad. We take pride in saying that their journey had begun right here, with the excellent professional knowledge and opportunities for personal growth which they received at this institute.
 We have been taking efforts and initiatives in enhancing job opportunities for our students. An Industry-Institute Interaction Cell is very actively maintained in our college.
@@ -93,7 +93,7 @@ That is, we have to produce engineers who can worl efficiently across the globe,
               </button>
               <p className="mt-4 text-gray-600 font-semibold text-center">
                 Shri. Eknath Jadhav<br />
-                Secretary, B.G.P.S Aurangabad
+                Secretary, B.G.P.S Chh. Sambhajinagar
               </p>
             </div>
           </div>

@@ -60,7 +60,7 @@ const Downloads = () => {
     { id: 3, name: "Department of Computer Science and Engineering", size: "750 KB", type: "PDF", lastUpdated: "2019-20", downloadUrl: "public/Project Lists-pdf/BE CSE Project List 2019-20.pdf" },
     { id: 4, name: "Department of Computer Science and Engineering", size: "900 KB", type: "PDF", lastUpdated: "2018-19", downloadUrl: "public/Project Lists-pdf/2018-19 Project List.pdf" },
     { id: 5, name: "Department of Computer Science and Engineering", size: "2.5 MB", type: "PDF", lastUpdated: "2017-18", downloadUrl: "public/Project Lists-pdf/BE-CSE-Project-List.pdf" },
-  ];
+  ]
   const renderDocumentTable = (documents: typeof admissionDocs) => (
     <div className="overflow-x-auto
 

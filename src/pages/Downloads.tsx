@@ -12,7 +12,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
 const Downloads = () => {
   const admissionDocs = [
     { id: 1, name: "Admission Form 2023-24", size: "1.2 MB", type: "PDF", lastUpdated: "May 15, 2023", downloadUrl: "/downloads/admission-form-2023-24.pdf" },
@@ -62,9 +61,10 @@ const Downloads = () => {
     { id: 4, name: "Department of Computer Science and Engineering", size: "900 KB", type: "PDF", lastUpdated: "2018-19", downloadUrl: "public/Project Lists-pdf/2018-19 Project List.pdf" },
     { id: 5, name: "Department of Computer Science and Engineering", size: "2.5 MB", type: "PDF", lastUpdated: "2017-18", downloadUrl: "public/Project Lists-pdf/BE-CSE-Project-List.pdf" },
   ];
-
   const renderDocumentTable = (documents: typeof admissionDocs) => (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto
+
+">
       <Table>
         <TableHeader>
           <TableRow className="bg-blue-900 text-white">
@@ -84,17 +84,30 @@ const Downloads = () => {
               <TableCell className="hidden md:table-cell text-xs sm:text-sm">{doc.lastUpdated}</TableCell>
               <TableCell className="text-right">
                 <div className="flex items-center justify-end gap-1 sm:gap-2">
-                  <Button variant="outline" size="sm" className="flex items-center gap-1 text-xs sm:text-sm">
-                    <Eye className="h-3 w-3 sm:h-4 sm:w-4" />
-                    <span className="hidden sm:inline">View</span>
-                  </Button>
+                  <a
+                    href={doc.downloadUrl || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex items-center gap-1 text-xs sm:text-sm"
+                    >
+                      <Eye className="h-3 w-3 sm:h-4 sm:w-4" />
+                      <span className="hidden sm:inline">View</span>
+                    </Button>
+                  </a>
                   <a
                     href={doc.downloadUrl || "#"}
                     download
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button size="sm" className="flex items-center gap-1 text-xs sm:text-sm">
+                    <Button
+                      size="sm"
+                      className="flex items-center gap-1 text-xs sm:text-sm"
+                    >
                       <Download className="h-3 w-3 sm:h-4 sm:w-4" />
                       <span className="hidden sm:inline">Download</span>
                     </Button>
@@ -189,4 +202,4 @@ const Downloads = () => {
   );
 };
 
-export default Downloads; 
+export default Downloads;

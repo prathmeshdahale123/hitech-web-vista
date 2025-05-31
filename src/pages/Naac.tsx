@@ -168,17 +168,11 @@ const Naac = () => {
       />
       
       <div className="container mx-auto px-4 py-8 sm:py-12 flex-grow">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+        <div className=" gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div className="col-span-1 md:col-span-2">
             <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4">About NAAC</h2>
             <p className="text-gray-700 mb-4 text-sm sm:text-base">
-              The National Assessment and Accreditation Council (NAAC) is an organization that assesses and accredits higher education institutions in India. NAAC is an autonomous body funded by the University Grants Commission of Government of India.
-            </p>
-            <p className="text-gray-700 mb-4 text-sm sm:text-base">
-              Hi-Tech Institute of Technology is proud to be accredited by NAAC, which reflects our commitment to maintaining quality standards in education, research, and overall institutional performance.
-            </p>
-            <p className="text-gray-700 text-sm sm:text-base">
-              The NAAC accreditation process involves detailed self-assessment and peer evaluation of the institution's performance in various criteria such as curricular aspects, teaching-learning, research, infrastructure, student support, governance, and institutional values.
+              The National Assessment and Accreditation Council (NAAC) is an organization that assesses and accredits higher education institutions in India. NAAC is an autonomous body funded by the University Grants Commission of Government of India. Hi-Tech Institute of Technology is proud to be accredited by NAAC, which reflects our commitment to maintaining quality standards in education, research, and overall institutional performance. The NAAC accreditation process involves detailed self-assessment and peer evaluation of the institution's performance in various criteria such as curricular aspects, teaching-learning, research, infrastructure, student support, governance, and institutional values.
             </p>
           </div>
         </div>

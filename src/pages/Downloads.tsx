@@ -12,9 +12,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
 const Downloads = () => {
-  // Sample documents for different categories
   const admissionDocs = [
     { id: 1, name: "Admission Form 2023-24", size: "1.2 MB", type: "PDF", lastUpdated: "May 15, 2023", downloadUrl: "/downloads/admission-form-2023-24.pdf" },
     { id: 2, name: "Prospectus 2023-24", size: "4.8 MB", type: "PDF", lastUpdated: "April 30, 2023", downloadUrl: "/downloads/prospectus-2023-24.pdf" },
@@ -26,45 +24,47 @@ const Downloads = () => {
   ];
 
   const academicDocs = [
-    { id: 1, name: "Academic Calendar 2023-24", size: "1.6 MB", type: "PDF", lastUpdated: "June 5, 2023", downloadUrl: "/downloads/academic-calendar-2023-24.pdf" },
-    { id: 2, name: "Examination Schedule - Odd Semester", size: "820 KB", type: "PDF", lastUpdated: "September 10, 2023", downloadUrl: "/downloads/exam-schedule-odd-sem.pdf" },
-    { id: 3, name: "Syllabus - Computer Engineering", size: "3.2 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-computer-engg.pdf" },
-    { id: 4, name: "Syllabus - Civil Engineering", size: "2.8 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-civil-engg.pdf" },
-    { id: 5, name: "Syllabus - Mechanical Engineering", size: "3.1 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-mech-engg.pdf" },
-    { id: 6, name: "Syllabus - AI & ML", size: "2.5 MB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/syllabus-ai-ml.pdf" },
-    { id: 7, name: "Laboratory Manual - Basic Engineering", size: "4.2 MB", type: "PDF", lastUpdated: "August 2, 2023", downloadUrl: "/downloads/lab-manual-basic-engg.pdf" },
-    { id: 8, name: "Student Attendance Format", size: "620 KB", type: "XLSX", lastUpdated: "July 20, 2023", downloadUrl: "/downloads/student-attendance-format.xlsx" },
+    { id: 1, name: "Academic Calender EVEN Semester", size: "1.6 MB", type: "PDF", lastUpdated: "(2022-23)", downloadUrl: "public/Academic-Calender-pdf/ACAD CALENDAR 2022-23 SEM-II Even Sem.pdf" },
+    { id: 2, name: "Academic Calender ODD Semester", size: "820 KB", type: "PDF", lastUpdated: "(2022-23)", downloadUrl: "public/Academic-Calender-pdf/ACADEMIC CALENDAR 22-23 ODD SEM.pdf" },
+    { id: 3, name: "Academic Calender Semister", size: "3.2 MB", type: "PDF", lastUpdated: "(2019-20)", downloadUrl: "public/Academic-Calender-pdf/AC_BAMU_2019_20_odd_sem-4.pdf" },
+    { id: 4, name: "Academic Calender Semister", size: "2.8 MB", type: "PDF", lastUpdated: "(2018-19)", downloadUrl: "public/Academic-Calender-pdf/2018-19_ACDEMIC_CALENDER.pdf" },
+    { id: 5, name: "Academic Calender Semister", size: "3.1 MB", type: "PDF", lastUpdated: "(2017-18)", downloadUrl: "public/Academic-Calender-pdf/2017-18_ACADEMIC_CALENDER.pdf" },
   ];
+
 
   const scholarshipDocs = [
-    { id: 1, name: "Government Scholarship Form", size: "1.1 MB", type: "PDF", lastUpdated: "July 10, 2023", downloadUrl: "/downloads/govt-scholarship-form.pdf" },
-    { id: 2, name: "Scholarship Schemes Information", size: "1.8 MB", type: "PDF", lastUpdated: "July 5, 2023", downloadUrl: "/downloads/scholarship-schemes-info.pdf" },
-    { id: 3, name: "Merit Scholarship Application", size: "950 KB", type: "PDF", lastUpdated: "July 12, 2023", downloadUrl: "/downloads/merit-scholarship-application.pdf" },
-    { id: 4, name: "SC/ST Scholarship Guidelines", size: "1.3 MB", type: "PDF", lastUpdated: "July 8, 2023", downloadUrl: "/downloads/scst-scholarship-guidelines.pdf" },
-    { id: 5, name: "EBC Scholarship Form", size: "980 KB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "/downloads/ebc-scholarship-form.pdf" },
+    { id: 1, name: "Government Scholarship Form", size: "250 KB", type: "PDF", lastUpdated: "July 10, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 2, name: "Aadhaar Card (Linked with bank account)", size: "250 KB", type: "PDF", lastUpdated: "July 5, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 3, name: "Recent Passport Size Photograph", size: "250 KB", type: "PDF", lastUpdated: "July 12, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 4, name: "Domicile Certificate of Maharashtra", size: "250 KB", type: "PDF", lastUpdated: "July 8, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 5, name: "Previous Year Marksheet (HSC/12th Marksheet if first year)", size: "250 KB", type: "PDF", lastUpdated: "July 15, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 6, name: "Current Year Bonafide Certificate from college", size: "250 KB", type: "PDF", lastUpdated: "July 20, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 7, name: "Caste Certificate (if applying under SC/ST/OBC/VJNT/SBC)", size: "250 KB", type: "PDF", lastUpdated: "July 25, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 8, name: "Caste Validity Certificate (Mandatory for SC/ST/VJNT/SBC students)", size: "250 KB", type: "PDF", lastUpdated: "July 30, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 9, name: "Income Certificate (issued by Tehsildar; not older than 1 year)", size: "250 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 10, name: "Ration Card (for address/family details proof)", size: "250 KB", type: "PDF", lastUpdated: "August 10, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 11, name: "Bank Passbook (scanned copy of first page – student’s name, IFSC, account number must be visible)", size: "250 KB", type: "PDF", lastUpdated: "August 15, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf"},
+    { id: 12, name: "Gap Certificate (if there is a gap in education)", size: "250 KB", type: "PDF", lastUpdated: "August 20, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 13, name: "Non-Creamy Layer Certificate (for OBC/VJNT/SBC categories – valid for 3 years)", size: "250 KB", type: "PDF", lastUpdated: "August 25, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 14, name: "Leaving Certificate (LC) (optional but often asked)", size: "250 KB", type: "PDF", lastUpdated: "August 30, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 15, name: "Hostel Certificate (if staying in a hostel and applying for related benefits)", size: "250 KB", type: "PDF", lastUpdated: "September 5, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+    { id: 16, name: "Self Declaration (some schemes require it)", size: "250 KB", type: "PDF", lastUpdated: "September 10, 2023", downloadUrl: "https://mahadbt.maharashtra.gov.in/PDF/6.pdf" },
+
   ];
 
-  const formsDocs = [
-    { id: 1, name: "No Objection Certificate Request", size: "720 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/noc-request.pdf" },
-    { id: 2, name: "Bonafide Certificate Request", size: "680 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/bonafide-request.pdf" },
-    { id: 3, name: "Leave Application Form", size: "520 KB", type: "PDF", lastUpdated: "July 25, 2023", downloadUrl: "/downloads/leave-application-form.pdf" },
-    { id: 4, name: "Character Certificate Request", size: "650 KB", type: "PDF", lastUpdated: "August 5, 2023", downloadUrl: "/downloads/character-certificate-request.pdf" },
-    { id: 5, name: "Industrial Visit Permission", size: "780 KB", type: "PDF", lastUpdated: "July 28, 2023", downloadUrl: "/downloads/industrial-visit-permission.pdf" },
-    { id: 6, name: "Library Membership Form", size: "620 KB", type: "PDF", lastUpdated: "July 20, 2023", downloadUrl: "/downloads/library-membership-form.pdf" },
-    { id: 7, name: "Alumni Registration Form", size: "850 KB", type: "PDF", lastUpdated: "June 15, 2023", downloadUrl: "/downloads/alumni-registration-form.pdf" },
-  ];
-
-  const naacDocs = [
-    { id: 1, name: "Self Study Report (SSR) 2022", size: "15.8 MB", type: "PDF", lastUpdated: "December 10, 2022", downloadUrl: "/downloads/naac-ssr-2022.pdf" },
-    { id: 2, name: "Annual Quality Assurance Report 2022-23", size: "8.2 MB", type: "PDF", lastUpdated: "June 30, 2023", downloadUrl: "/downloads/naac-aqar-2022-23.pdf" },
-    { id: 3, name: "NAAC Metrics Documentation", size: "12.5 MB", type: "PDF", lastUpdated: "January 15, 2023", downloadUrl: "/downloads/naac-metrics-documentation.pdf" },
-    { id: 4, name: "Best Practices Documentation", size: "3.8 MB", type: "PDF", lastUpdated: "February 10, 2023", downloadUrl: "/downloads/best-practices-documentation.pdf" },
-    { id: 5, name: "Student Satisfaction Survey Report", size: "5.2 MB", type: "PDF", lastUpdated: "March 25, 2023", downloadUrl: "/downloads/student-satisfaction-survey.pdf" },
-  ];
-
-  // Function to render document table
+  const projectDocs = [
+    { id: 1, name: "Project Report Department of Computer Science and Engineering", size: "1.0 MB", type: "PDF", lastUpdated: "2022-23", downloadUrl: "/downloads/project-proposal-template.pdf" },
+    { id: 2, name: "The members of the cell", size: "1.4 MB", type: "PDF", lastUpdated: "2020-21", downloadUrl: "/downloads/project-guidelines-2023-24.pdf" },
+    { id: 2, name: "Supreme Court Ruling", size: "1.4 MB", type: "PDF", lastUpdated: "2020-21", downloadUrl: "/downloads/project-guidelines-2023-24.pdf" },
+    { id: 3, name: "Department of Computer Science and Engineering", size: "750 KB", type: "PDF", lastUpdated: "2020-21", downloadUrl: "public/Project Lists-pdf/BE 2020-21 Project List.pdf" },
+    { id: 3, name: "Department of Computer Science and Engineering", size: "750 KB", type: "PDF", lastUpdated: "2019-20", downloadUrl: "public/Project Lists-pdf/BE CSE Project List 2019-20.pdf" },
+    { id: 4, name: "Department of Computer Science and Engineering", size: "900 KB", type: "PDF", lastUpdated: "2018-19", downloadUrl: "public/Project Lists-pdf/2018-19 Project List.pdf" },
+    { id: 5, name: "Department of Computer Science and Engineering", size: "2.5 MB", type: "PDF", lastUpdated: "2017-18", downloadUrl: "public/Project Lists-pdf/BE-CSE-Project-List.pdf" },
+  ]
   const renderDocumentTable = (documents: typeof admissionDocs) => (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto
+
+">
       <Table>
         <TableHeader>
           <TableRow className="bg-blue-900 text-white">
@@ -84,17 +84,30 @@ const Downloads = () => {
               <TableCell className="hidden md:table-cell text-xs sm:text-sm">{doc.lastUpdated}</TableCell>
               <TableCell className="text-right">
                 <div className="flex items-center justify-end gap-1 sm:gap-2">
-                  <Button variant="outline" size="sm" className="flex items-center gap-1 text-xs sm:text-sm">
-                    <Eye className="h-3 w-3 sm:h-4 sm:w-4" />
-                    <span className="hidden sm:inline">View</span>
-                  </Button>
+                  <a
+                    href={doc.downloadUrl || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex items-center gap-1 text-xs sm:text-sm"
+                    >
+                      <Eye className="h-3 w-3 sm:h-4 sm:w-4" />
+                      <span className="hidden sm:inline">View</span>
+                    </Button>
+                  </a>
                   <a
                     href={doc.downloadUrl || "#"}
                     download
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button size="sm" className="flex items-center gap-1 text-xs sm:text-sm">
+                    <Button
+                      size="sm"
+                      className="flex items-center gap-1 text-xs sm:text-sm"
+                    >
                       <Download className="h-3 w-3 sm:h-4 sm:w-4" />
                       <span className="hidden sm:inline">Download</span>
                     </Button>
@@ -129,8 +142,7 @@ const Downloads = () => {
             <TabsTrigger value="admission" className="text-xs sm:text-sm">Admission</TabsTrigger>
             <TabsTrigger value="academic" className="text-xs sm:text-sm">Academic</TabsTrigger>
             <TabsTrigger value="scholarship" className="text-xs sm:text-sm">Scholarship</TabsTrigger>
-            <TabsTrigger value="forms" className="text-xs sm:text-sm">Forms</TabsTrigger>
-            <TabsTrigger value="naac" className="text-xs sm:text-sm">NAAC & NIRF</TabsTrigger>
+            <TabsTrigger value="project" className="text-xs sm:text-sm">Project</TabsTrigger>
           </TabsList>
 
           <TabsContent value="admission" className="mt-4 sm:mt-6">
@@ -157,20 +169,12 @@ const Downloads = () => {
             {renderDocumentTable(scholarshipDocs)}
           </TabsContent>
 
-          <TabsContent value="forms" className="mt-4 sm:mt-6">
+          <TabsContent value="project" className="mt-4 sm:mt-6">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg sm:text-xl font-semibold text-blue-800">Forms & Certificates</h3>
-              <p className="text-xs sm:text-sm text-gray-500">{formsDocs.length} documents available</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-800">Project Documents</h3>
+              <p className="text-xs sm:text-sm text-gray-500">{projectDocs.length} documents available</p>
             </div>
-            {renderDocumentTable(formsDocs)}
-          </TabsContent>
-
-          <TabsContent value="naac" className="mt-4 sm:mt-6">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg sm:text-xl font-semibold text-blue-800">NAAC & NIRF Documents</h3>
-              <p className="text-xs sm:text-sm text-gray-500">{naacDocs.length} documents available</p>
-            </div>
-            {renderDocumentTable(naacDocs)}
+            {renderDocumentTable(projectDocs)}
           </TabsContent>
         </Tabs>
 

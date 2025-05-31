@@ -3,17 +3,7 @@ import { Cpu, Wrench, Building, Brain } from "lucide-react";
 
 const CoursesSection = () => {
   const courses = [
-    {
-      icon: Building,
-      title: "Civil Engineering",
-      description: "Comprehensive program covering structural design, construction management, and infrastructure development"
-    },
-    {
-      icon: Wrench,
-      title: "Mechanical Engineering",
-      description: "Advanced curriculum in manufacturing, thermal systems, and mechanical design"
-    },
-    {
+     {
       icon: Cpu,
       title: "Computer Science & Engineering",
       description: "Cutting-edge program in software development, algorithms, and system design"
@@ -22,7 +12,18 @@ const CoursesSection = () => {
       icon: Brain,
       title: "CSE (AI & ML)",
       description: "Specialized program focusing on artificial intelligence and machine learning technologies"
+    },
+    {
+      icon: Wrench,
+      title: "Mechanical Engineering",
+      description: "Advanced curriculum in manufacturing, thermal systems, and mechanical design"
+    },  
+    {
+      icon: Building,
+      title: "Civil Engineering",
+      description: "Comprehensive program covering structural design, construction management, and infrastructure development"
     }
+   
   ];
 
   return (

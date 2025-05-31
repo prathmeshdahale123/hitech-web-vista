@@ -94,53 +94,25 @@ const Nirf = () => {
       />
       
       <div className="container mx-auto px-4 py-12 flex-grow">
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-1 gap-8 mb-12">
           <div className="col-span-2">
             <h2 className="text-2xl font-bold text-blue-900 mb-4">About NIRF</h2>
             <p className="text-gray-700 mb-4">
               The National Institutional Ranking Framework (NIRF) is a methodology adopted by the Ministry of Education, Government of India, to rank institutions of higher education in India. The framework was approved by the MHRD and launched in 2015.
-            </p>
-            <p className="text-gray-700 mb-4">
+            {/* </p>
+            <p className="text-gray-700 mb-4"> */}
               NIRF outlines a methodology to rank institutions across the country based on parameters such as Teaching, Learning and Resources, Research and Professional Practices, Graduation Outcomes, Outreach and Inclusivity, and Perception.
-            </p>
-            <p className="text-gray-700">
+            {/* </p>
+            <p className="text-gray-700"> */}
               Hi-Tech Institute of Technology actively participates in the NIRF ranking process as part of our commitment to transparency and continuous quality improvement. Our participation helps us benchmark our performance against other institutions and identify areas for improvement.
             </p>
           </div>
           
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <div className="text-center">
-              <Award className="h-16 w-16 text-blue-700 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-blue-800 mb-2">NIRF Ranking</h3>
-              <div className="bg-white rounded-lg p-4 shadow-sm mb-4">
-                <p className="text-gray-600">Latest Ranking (2023)</p>
-                <p className="text-3xl font-bold text-blue-900">178</p>
-                <p className="text-sm text-gray-500">Engineering Category</p>
-              </div>
-              <div className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600">2022 Ranking:</span>
-                  <span className="font-medium">185</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600">2021 Ranking:</span>
-                  <span className="font-medium">196</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600">2020 Ranking:</span>
-                  <span className="font-medium">201-250 Band</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
         
         <Tabs defaultValue="parameters">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3">
-            <TabsTrigger value="parameters">Ranking Parameters</TabsTrigger>
-            <TabsTrigger value="stats">Institute Statistics</TabsTrigger>
-            <TabsTrigger value="documents">NIRF Documents</TabsTrigger>
-          </TabsList>
+        
           
           <TabsContent value="parameters" className="mt-6">
             <h3 className="text-xl font-semibold text-blue-800 mb-4">NIRF Ranking Parameters</h3>
@@ -165,221 +137,28 @@ const Nirf = () => {
             </div>
           </TabsContent>
           
-          <TabsContent value="stats" className="mt-6">
-            <h3 className="text-xl font-semibold text-blue-800 mb-4">Institute Statistics for NIRF 2023</h3>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <Users className="h-6 w-6 text-blue-700" />
-                    </div>
-                    <div>
-                      <p className="text-gray-600">Student Strength</p>
-                      <p className="text-2xl font-bold text-blue-900">1,250</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <GraduationCap className="h-6 w-6 text-blue-700" />
-                    </div>
-                    <div>
-                      <p className="text-gray-600">Faculty Count</p>
-                      <p className="text-2xl font-bold text-blue-900">85</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <FileText className="h-6 w-6 text-blue-700" />
-                    </div>
-                    <div>
-                      <p className="text-gray-600">Publications</p>
-                      <p className="text-2xl font-bold text-blue-900">210</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <Library className="h-6 w-6 text-blue-700" />
-                    </div>
-                    <div>
-                      <p className="text-gray-600">Research Projects</p>
-                      <p className="text-2xl font-bold text-blue-900">32</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            
-            <div className="space-y-8">
-              {/* These would be actual charts in a real implementation */}
-              <div>
-                <h4 className="font-medium text-blue-800 mb-3">Faculty-Student Ratio</h4>
-                <div className="bg-gray-100 rounded-lg p-8 flex items-center justify-center">
-                  <p className="text-gray-500">[Faculty-Student Ratio Chart]</p>
-                </div>
-              </div>
-              
-              <div>
-                <h4 className="font-medium text-blue-800 mb-3">Research Output Trend</h4>
-                <div className="bg-gray-100 rounded-lg p-8 flex items-center justify-center">
-                  <p className="text-gray-500">[Research Output Trend Chart]</p>
-                </div>
-              </div>
-              
-              <div>
-                <h4 className="font-medium text-blue-800 mb-3">Placement Statistics</h4>
-                <div className="bg-gray-100 rounded-lg p-8 flex items-center justify-center">
-                  <p className="text-gray-500">[Placement Statistics Chart]</p>
-                </div>
-              </div>
-            </div>
-          </TabsContent>
           
-          <TabsContent value="documents" className="mt-6">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold text-blue-800 mb-4">NIRF Documents</h3>
-                <p className="text-gray-700 mb-6">
-                  Below are the documents submitted by Hi-Tech Institute of Technology for NIRF ranking process. These documents contain detailed information about various parameters as per NIRF guidelines.
-                </p>
-                
-                <div className="space-y-4">
-                  {nirfDocs.map((doc) => (
-                    <div key={doc.id} className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                      <div className="flex items-start gap-3">
-                        <FileText className="h-5 w-5 text-blue-700 mt-1" />
-                        <div>
-                          <p className="font-medium">{doc.name}</p>
-                          <p className="text-sm text-gray-500">Size: {doc.size} | Uploaded: {doc.date}</p>
-                        </div>
-                      </div>
-                      <Button variant="outline" size="sm" className="flex items-center gap-1">
-                        <Download className="h-4 w-4" />
-                        <span>Download</span>
-                      </Button>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              
-              <div>
-                <Card>
-                  <CardHeader className="bg-blue-900 text-white">
-                    <CardTitle>NIRF Preparation Process</CardTitle>
-                  </CardHeader>
-                  <CardContent className="pt-6 space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold flex-shrink-0">
-                        1
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-blue-800">Data Collection</h4>
-                        <p className="text-sm text-gray-600">Comprehensive data collection from all departments regarding faculty, students, research, finances, etc.</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold flex-shrink-0">
-                        2
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-blue-800">Data Verification</h4>
-                        <p className="text-sm text-gray-600">Thorough verification and validation of collected data by the NIRF committee.</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold flex-shrink-0">
-                        3
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-blue-800">Documentation</h4>
-                        <p className="text-sm text-gray-600">Preparation of required documents as per NIRF format and guidelines.</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold flex-shrink-0">
-                        4
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-blue-800">Online Submission</h4>
-                        <p className="text-sm text-gray-600">Submission of data on the NIRF portal within the stipulated timeframe.</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold flex-shrink-0">
-                        5
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-blue-800">Analysis & Improvement</h4>
-                        <p className="text-sm text-gray-600">Analysis of ranking results and planning for continuous improvement.</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-                
-                <div className="mt-6 bg-blue-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-blue-800 mb-3">NIRF Coordinator</h3>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 font-bold">
-                        PK
-                      </div>
-                      <div>
-                        <p className="font-medium">Dr. Prakash Kumar</p>
-                        <p className="text-gray-600">NIRF Coordinator</p>
-                      </div>
-                    </div>
-                    <p className="text-gray-700"><strong>Email:</strong> nirf@hitech.edu.in</p>
-                    <p className="text-gray-700"><strong>Phone:</strong> +91 9876543211</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </TabsContent>
         </Tabs>
         
         <div className="mt-12 bg-blue-50 p-6 rounded-lg">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-blue-800 mb-4">NIRF Rankings Over the Years</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-                  <span className="font-medium">NIRF 2023</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">Rank 178</span>
-                </div>
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-                  <span className="font-medium">NIRF 2022</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">Rank 185</span>
-                </div>
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-                  <span className="font-medium">NIRF 2021</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">Rank 196</span>
-                </div>
-                <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
-                  <span className="font-medium">NIRF 2020</span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">Band 201-250</span>
-                </div>
-              </div>
-            </div>
+  <h3 className="text-xl font-semibold text-blue-800 mb-4">NIRF</h3>
+  <div className="space-y-4">
+    <div className="flex justify-between items-center p-3 bg-white rounded-lg shadow-sm">
+      <span className="font-medium">NIRF 2023</span>
+      <a
+        href="public/other-pdf's/nirf.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium hover:bg-blue-200"
+      >
+        View PDF
+      </a>
+    </div>
+    
+  </div>
+</div>
             
             <div>
               <h3 className="text-xl font-semibold text-blue-800 mb-4">Official NIRF Resources</h3>
@@ -389,27 +168,36 @@ const Nirf = () => {
                   <div>
                     <p className="font-medium">NIRF Official Website</p>
                     <p className="text-sm text-gray-600">Visit the official NIRF website for complete ranking information.</p>
-                    <Button variant="link" className="p-0 h-auto text-blue-700 mt-1">Visit Website</Button>
+                    <a
+                      href="https://www.nirfindia.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-0 h-auto text-blue-700 mt-1 underline font-medium"
+                    >
+                      Visit Website
+                    </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm">
                   <FileText className="h-5 w-5 text-blue-700 mt-1" />
                   <div>
+                   <div>
                     <p className="font-medium">NIRF Parameters & Methodology</p>
                     <p className="text-sm text-gray-600">Understand the NIRF ranking methodology and parameters.</p>
-                    <Button variant="link" className="p-0 h-auto text-blue-700 mt-1">Learn More</Button>
+                    <a
+                      href="https://www.nirfindia.org/nirfpdfcdn/2024/framework/Engineering.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-0 h-auto text-blue-700 mt-1 underline font-medium"
+                    >
+                      Learn More
+                    </a>i
+                  </div>
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm">
-                  <GraduationCap className="h-5 w-5 text-blue-700 mt-1" />
-                  <div>
-                    <p className="font-medium">Engineering Institutions Ranking</p>
-                    <p className="text-sm text-gray-600">Check the complete list of engineering institutions ranking.</p>
-                    <Button variant="link" className="p-0 h-auto text-blue-700 mt-1">View Rankings</Button>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>

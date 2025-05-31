@@ -47,7 +47,7 @@ const ChatBot = () => {
           response = "Please check our Downloads section for the latest fee structure or contact the accounts office.";
           break;
         case "Contact Information":
-          response = "Phone: (0240) 2552240 | Email: info@hitech.edu.in | Address: Waluj MIDC, Aurangabad";
+          response = "Phone: (0240) 2552240 | Email: info@hitech.edu.in | Address: Waluj MIDC, Chh. Sambhajinagar";
           break;
         default:
           response = "Thank you for your query. Please contact us for more information.";

@@ -168,17 +168,11 @@ const Naac = () => {
       />
       
       <div className="container mx-auto px-4 py-8 sm:py-12 flex-grow">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+        <div className=" gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div className="col-span-1 md:col-span-2">
             <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4">About NAAC</h2>
             <p className="text-gray-700 mb-4 text-sm sm:text-base">
-              The National Assessment and Accreditation Council (NAAC) is an organization that assesses and accredits higher education institutions in India. NAAC is an autonomous body funded by the University Grants Commission of Government of India.
-            </p>
-            <p className="text-gray-700 mb-4 text-sm sm:text-base">
-              Hi-Tech Institute of Technology is proud to be accredited by NAAC, which reflects our commitment to maintaining quality standards in education, research, and overall institutional performance.
-            </p>
-            <p className="text-gray-700 text-sm sm:text-base">
-              The NAAC accreditation process involves detailed self-assessment and peer evaluation of the institution's performance in various criteria such as curricular aspects, teaching-learning, research, infrastructure, student support, governance, and institutional values.
+              The National Assessment and Accreditation Council (NAAC) is an organization that assesses and accredits higher education institutions in India. NAAC is an autonomous body funded by the University Grants Commission of Government of India. Hi-Tech Institute of Technology is proud to be accredited by NAAC, which reflects our commitment to maintaining quality standards in education, research, and overall institutional performance. The NAAC accreditation process involves detailed self-assessment and peer evaluation of the institution's performance in various criteria such as curricular aspects, teaching-learning, research, infrastructure, student support, governance, and institutional values.
             </p>
           </div>
         </div>
@@ -307,83 +301,7 @@ const Naac = () => {
             </div>
           </TabsContent>
           
-          {/* <TabsContent value="aqar" className="mt-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-              <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-blue-800 mb-4">Annual Quality Assurance Report (AQAR)</h3>
-                <p className="text-gray-700 mb-6 text-sm sm:text-base">
-                  The Annual Quality Assurance Report (AQAR) is a yearly report submitted by accredited institutions to NAAC. It reflects the quality initiatives and achievements of the institution for each academic year.
-                </p>
-                
-                <div className="space-y-4">
-                  {aqarReports.map((report) => (
-                    <div key={report.id} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                      <div className="flex items-start gap-3">
-                        <FileText className="h-5 w-5 text-blue-700 mt-1" />
-                        <div>
-                          <p className="font-medium text-sm sm:text-base">{report.title}</p>
-                          <p className="text-xs sm:text-sm text-gray-500">Size: {report.size} | Uploaded: {report.date}</p>
-                        </div>
-                      </div>
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
-                        className="flex items-center gap-1 text-xs sm:text-sm mt-2 sm:mt-0"
-                        asChild
-                      >
-                        <a
-                          href={report.pdfUrl}
-                          download
-                          aria-label={`Download ${report.title}`}
-                          onClick={() => handleDownload(report.pdfUrl, report.title)}
-                        >
-                          <Download className="h-4 w-4" />
-                          <span>Download</span>
-                        </a>
-                      </Button>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              
-              <div className="bg-blue-50 p-4 sm:p-6 rounded-lg">
-                <h3 className="text-lg sm:text-xl font-semibold text-blue-800 mb-4">Quality Initiatives</h3>
-                <div className="space-y-4">
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <div className="flex items-center gap-2 mb-2">
-                      <BarChart3 className="h-5 w-5 text-blue-700" />
-                      <h4 className="font-medium text-blue-700 text-sm sm:text-base">Faculty Development Programs</h4>
-                    </div>
-                    <p className="text-gray-600 text-xs sm:text-sm">12 FDPs conducted in the academic year 2022-23 covering various technical and pedagogical aspects.</p>
-                  </div>
-                  
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <div className="flex items-center gap-2 mb-2">
-                      <BarChart3 className="h-5 w-5 text-blue-700" />
-                      <h4 className="font-medium text-blue-700 text-sm sm:text-base">Research Publications</h4>
-                    </div>
-                    <p className="text-gray-600 text-xs sm:text-sm">68 research papers published in Scopus/Web of Science indexed journals in 2022-23.</p>
-                  </div>
-                  
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <div className="flex items-center gap-2 mb-2">
-                      <BarChart3 className="h-5 w-5 text-blue-700" />
-                      <h4 className="font-medium text-blue-700 text-sm sm:text-base">Industry Collaborations</h4>
-                    </div>
-                    <p className="text-gray-600 text-xs sm:text-sm">8 new MoUs signed with industries for internships, training, and research projects.</p>
-                  </div>
-                  
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <div className="flex items-center gap-2 mb-2">
-                      <BarChart3 className="h-5 w-5 text-blue-700" />
-                      <h4 className="font-medium text-blue-700 text-sm sm:text-base">Student Achievements</h4>
-                    </div>
-                    <p className="text-gray-600 text-xs sm:text-sm">42 students received awards in various national-level technical competitions and cultural events.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </TabsContent> */}
+
           
           <TabsContent value="calendar" className="mt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
@@ -548,40 +466,8 @@ const Naac = () => {
             </div>
           </TabsContent>
         </Tabs>
-        
-        {/* <div className="mt-8 sm:mt-12">
-          <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">NAAC Coordinator Contact</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-              <h3 className="text-lg sm:text-xl font-semibold text-blue-800 mb-4">IQAC Cell</h3>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 font-bold text-sm sm:text-base">
-                    SK
-                  </div>
-                  <div>
-                    <p className="font-medium text-sm sm:text-base">Dr. Sanjay Kumar</p>
-                    <p className="text-gray-600 text-xs sm:text-sm">IQAC Coordinator</p>
-                  </div>
-                </div>
-                
-                <div>
-                  <p className="text-gray-700 text-sm sm:text-base"><strong>Email:</strong> iqac@hitech.edu.in</p>
-                  <p className="text-gray-700 text-sm sm:text-base"><strong>Phone:</strong> +91 9876543210</p>
-                  <p className="text-gray-700 text-sm sm:text-base"><strong>Office:</strong> Administrative Block, First Floor, Room No. 105</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-gray-100 p-4 sm:p-6 rounded-lg">
-              <h3 className="text-lg sm:text-xl font-semibold text-blue-800 mb-4">NAAC Helpdesk</h3>
-              <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                For any queries related to NAAC accreditation, documentation, or information, please contact our NAAC helpdesk.
-              </p>
-              <Button className="w-full text-xs sm:text-sm" aria-label="Contact NAAC Helpdesk">Contact NAAC Helpdesk</Button>
-            </div>
-          </div>
-        </div> */}
+
+
 
         <div className="mt-8 sm:mt-12">
           <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-4 sm:mb-6">Internal Quality Assurance Cell (IQAC)</h2>

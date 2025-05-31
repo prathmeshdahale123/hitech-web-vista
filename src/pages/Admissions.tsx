@@ -308,10 +308,10 @@ const Admissions = () => {
                               {...field}
                             >
                               <option value="">Select a course</option>
-                              <option value="civil">Civil Engineering</option>
-                              <option value="mechanical">Mechanical Engineering</option>
                               <option value="computer">Computer Science & Engineering</option>
                               <option value="aiml">CSE (AI & ML)</option>
+                              <option value="mechanical">Mechanical Engineering</option>
+                              <option value="civil">Civil Engineering</option>
                             </select>
                           </FormControl>
                           <FormMessage />

@@ -135,7 +135,7 @@ const Departments = () => {
         { name: "Prof. Ranvijay Singh", designation: "Assistant Professor" },
       ],
     },
-    src/pages/Departments.tsx
+    
   ];
 
   return (

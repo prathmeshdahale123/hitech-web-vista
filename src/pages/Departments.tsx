@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
@@ -58,7 +57,6 @@ const Departments = () => {
         { name: "Prof. Bhakti Chudiwal", designation: "Assistant Professor" },
         { name: "Prof. Ashwini Kachare", designation: "Assistant Professor" },
         { name: "Prof. S.E. Ingle", designation: "Assistant Professor" },
-
       ],
     },
     {
@@ -79,10 +77,8 @@ const Departments = () => {
         { name: "Prof. Samiksha Nikam", designation: "Assistant Professor" },
         { name: "Prof. Syed Irfan", designation: "Assistant Professor" },
         { name: "Prof. Pooja Sable", designation: "Assistant Professor" },
-
       ],
     },
-   
     {
       id: "mechanical",
       name: "Mechanical Engineering",
@@ -97,21 +93,21 @@ const Departments = () => {
       facultyList: [
         { name: "Prof. A. S. Adkine", designation: "HOD" },
         { name: "Prof. Govind Dhage", designation: "Assistant Professor" },
-        { name: "	Prof. Ashutosh Yetalkar", designation: "Assistant Professor" },
+        { name: "Prof. Ashutosh Yetalkar", designation: "Assistant Professor" },
         { name: "Prof. Babarao Kandharkar", designation: "Assistant Professor" },
         { name: "Prof. Sohel Shaikh", designation: "Assistant Professor" },
         { name: "Prof. Janardhan Bhor", designation: "Assistant Professor" },
-        { name: "	Prof. Subodh Pawar", designation: "Assistant Professor" },
+        { name: "Prof. Subodh Pawar", designation: "Assistant Professor" },
         { name: "Prof. Mangesh Lendgule", designation: "Assistant Professor" },
         { name: "Prof. Kanishk Jawale", designation: "Assistant Professor" },
         { name: "Prof. A.S Holkar", designation: "Assistant Professor" },
         { name: "Prof. N.V. Athavale", designation: "Assistant Professor" },
         { name: "Prof. A.M. Ganeshpure", designation: "Assistant Professor" },
-        { name: "	Dr. Laxman Mishra", designation: "Assistant Professor" },
+        { name: "Dr. Laxman Mishra", designation: "Assistant Professor" },
         { name: "Dr. T. Govardhan", designation: "Assistant Professor" },
       ],
     },
-     {
+    {
       id: "civil",
       name: "Civil Engineering",
       icon: <Building2 className="h-12 w-12 text-blue-700" />,
@@ -135,7 +131,6 @@ const Departments = () => {
         { name: "Prof. Ranvijay Singh", designation: "Assistant Professor" },
       ],
     },
-    
   ];
 
   return (
@@ -149,13 +144,16 @@ const Departments = () => {
       <div className="container mx-auto px-4 py-12 flex-grow">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {departments.map((dept) => (
-            <Card key={dept.id} className="hover:shadow-lg transition-shadow">
+            <Card
+              key={dept.id}
+              className="hover:shadow-lg transition-shadow flex flex-col min-h-[350px]"
+            >
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">{dept.icon}</div>
                 <CardTitle>{dept.name}</CardTitle>
                 <CardDescription>Established {dept.established}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <p className="text-gray-600 text-sm line-clamp-3 mb-3">{dept.description}</p>
                 <div className="grid grid-cols-2 gap-2 text-sm">
                   <div className="flex items-center gap-1">
@@ -168,7 +166,7 @@ const Departments = () => {
                   </div>
                 </div>
               </CardContent>
-              <CardFooter>
+              <CardFooter className="mt-auto">
                 <Button variant="outline" className="w-full" asChild>
                   <Link to={`/departments/${dept.id}`}>Department Details</Link>
                 </Button>

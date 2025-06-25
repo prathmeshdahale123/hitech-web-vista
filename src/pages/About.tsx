@@ -39,7 +39,7 @@ That is, we have to produce engineers who can worl efficiently across the globe,
             <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex flex-col items-center mb-4">
                 <img
-                  src="/images/principal.jpg"
+                  src="../src/web-img/Principal_img.jpg"
                   alt="Principal"
                   className="w-32 h-32 rounded-full object-cover mb-4 shadow"
                 />

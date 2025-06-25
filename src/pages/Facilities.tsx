@@ -202,7 +202,12 @@ const Facilities = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-200 rounded-lg min-h-[400px] flex items-center justify-center">
+              <div className="bg-gray-200 rounded-lg min-h-[400px] flex flex-col items-center justify-center">
+                <img
+                  src="../src/web-img/library_img.jpg"
+                  alt="Library"
+                  className="rounded-lg mb-4 max-h-64 object-cover shadow"
+                />
                 <p className="text-gray-500">Library Image Gallery</p>
               </div>
             </div>

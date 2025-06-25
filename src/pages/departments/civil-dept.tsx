@@ -34,7 +34,7 @@ const CivilDept = () => {
             </CardHeader>
             <CardContent className="flex flex-col items-center gap-4">
               <img
-                src="/images/hod_sunil_patil.jpg"
+                src="../src/web-img/HOD_CIVIL.jpg"
                 alt="Prof. R. F. Siddiquil"
                 className="w-32 h-32 rounded-full object-cover shadow-md"
               />

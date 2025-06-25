@@ -33,7 +33,7 @@ const MechDept = () => {
             </CardHeader>
             <CardContent className="flex flex-col items-center gap-4">
               <img
-                src="/images/hod_mech.jpg"
+                src="../src/web-img/HOD_Mech.jpg"
                 alt="Prof. A. S. Adkine"
                 className="w-32 h-32 rounded-full object-cover shadow-md"
               />

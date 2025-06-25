@@ -39,7 +39,7 @@ const AimlDept = () => {
             </CardHeader>
             <CardContent className="flex flex-col items-center gap-4">
               <img
-                src="/images/hod_aiml.jpg"
+                src="../src/web-img/HOD_AIML.jpg"
                 alt="Prof. Sandip Eknathrao Ingle"
                 className="w-32 h-32 rounded-full object-cover shadow-md"
               />

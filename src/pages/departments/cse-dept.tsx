@@ -33,7 +33,7 @@ const CseDept = () => {
             </CardHeader>
             <CardContent className="flex flex-col items-center gap-4">
               <img
-                src="/images/hod_p_m_mohite.jpg"
+                src="../src/web-img/HOD_CSE.jpg"
                 alt="Prof. P. M. Mohite"
                 className="w-32 h-32 rounded-full object-cover shadow-md"
               />
